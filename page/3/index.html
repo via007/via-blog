@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.144.1">
+    <title>Via Blog👀</title>
+    <link rel="canonical" href="https://example.com/">
+    
+    
+    <link rel="icon" href="/favicon.ico">
+    
+    
+    <meta name="description" content="">
+    
+    
+    
+    <style>
+
+
+
+:root {
+    --site-bg: url("/flowertile.png");
+    --accent-color: #f55cc0;
+    --select-color: #ffc1e9;
+    --link-color: #5083C1;
+    --bg-color: #CEEAFF;
+    --text-color: #191919;
+    --bg-color2: white;
+    --border-color: #215697;
+    --special-text-color: #215697;
+    --post-header-color: white;
+    --post-shadow-color: #21569760;
+    --outline-color: #6EAAD6;
+    --outline-color2: #CEEAFF;
+    --list-style-type: "<no value>";
+    --list-style-image: url("/flower.png");
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+::selection {
+    background: var(--select-color);
+    color: var(--border-color);
+}
+
+body {
+    background-color: var(--bg-color);
+    background-image: var(--site-bg);
+    margin: 0;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+p {line-height: 1.5em;}
+
+h1 {
+    font-size: 1.5em;
+    color: var(--post-header-color);
+    filter: drop-shadow(2px 0 0 var(--outline-color)) drop-shadow(0 2px 0 var(--outline-color)) drop-shadow(-2px 0 0 var(--outline-color)) drop-shadow(0 -2px 0 var(--outline-color))drop-shadow(0 1px 1px var(--outline-color2)) drop-shadow(1px 0 1px var(--outline-color2));
+}
+
+h4,
+h5,
+h6 {color: var(--special-text-color);}
+
+header {
+    background-size: 100%;
+    background-position: center;
+    min-height: 80px;
+    margin: 0 0;
+    align-content: center;
+}
+
+header > h1 {
+    background-color: var(--bg-color2);
+    color: var(--special-text-color);
+    margin: 0 auto;
+    font-size: 2em;
+/*uncomment this line if you want the header text to not take up the full length of the div*/
+    /*width: fit-content;*/
+    max-width: 600px;
+    padding: 6px 12px;
+    border-radius: 1em;
+    border: 4px double var(--outline-color);
+    filter: none;
+    text-align: center;
+}
+
+ul.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+li.page-item {
+    list-style: none;
+}
+
+li.page-item a{
+    display: inline-flex;
+    font-size: 1rem;
+    margin: .2rem;
+    background-color: var(--bg-color2);
+    color: var(--text-color);
+    padding: 1em;
+    border: 2px solid var(--border-color);
+    border-radius: .3em;
+    margin-bottom: 1em;
+    box-shadow: var(--post-shadow-color) 5px 5px;
+
+    text-decoration: none;
+    user-select: none;
+}
+
+li.page-item.active a{
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+li.page-item.disabled a{
+    cursor: not-allowed;
+}
+
+li.page-item:not(.disabled):not(.active) a:hover{
+    background-color: var(--select-color);
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+li {
+    
+        list-style-image: var(--list-style-image);
+    
+}
+
+nav {margin: 1em;}
+
+nav > ul {
+    max-width: 960px;
+    margin: auto;
+    line-height: 3rem;
+    list-style-type: none;
+    padding-left: 0;
+    justify-content: space-evenly;
+}
+
+nav li {
+    text-align: center;
+    list-style-image: none;
+    list-style-type: none;
+}
+
+nav li > a {
+    font-weight: bold;
+    background-color: var(--bg-color);
+    border: 4px double var(--outline-color);
+    padding: .5em 3em;
+    text-decoration: none;
+}
+
+nav li > a:visited {color: var(--link-color);}
+nav li > a:hover {
+    color: var(--accent-color);
+    background-color: var(--select-color);
+}
+
+a {
+    color: var(--link-color);
+    border-radius: .3em;
+    transition: .2s ease-out;
+}
+
+a:visited {
+    color: var(--text-color);
+}
+
+a:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    transition: .2s ease;
+}
+
+#sidebar {
+    background-color: var(--bg-color2);
+    color: var(--special-text-color);
+    height: fit-content;
+    min-width: 320px;
+    margin-top: 1em;
+    margin-right: 2em;
+    border-radius: .5em;
+}
+
+.small-box {
+    max-width: 240px;
+    margin: auto;
+    border: 2px solid var(--bg-color);
+    font-size: 11px;
+    line-height: 1.5rem;
+}
+
+#avatar {
+    margin: .5em;
+    max-width: 320px;
+}
+
+/*flower shape generated from here: https://css-generators.com/flower-shapes/ */
+.flower {
+    width: 300px; 
+    aspect-ratio: 1;
+    
+    
+        border-radius: 50%;
+    
+    
+}
+
+#bio {
+    margin: 20px;
+    padding: .2em;
+    background: var(--bg-color);
+    border: 4px double var(--bg-color2);
+    border-radius: 2em;
+    font-size: small;
+}
+
+#bio p { margin: 1em; }
+
+#content {
+    display: flex;
+    max-width: 960px;
+    margin: auto;
+}
+
+main {
+    padding: 1em;
+    padding-top: 0;
+}
+
+#top {
+    background-color: var(--bg-color);
+}
+
+#top section {
+    background-color: var(--bg-color2);
+    border-radius: .5em;
+    margin-bottom: 10px;
+    padding: .5em 1em;
+    width: 100%;
+}
+
+article {
+    background-color: var(--bg-color2);
+    padding: 1em;
+    border: 2px solid var(--border-color);
+    border-radius: .3em;
+    margin-bottom: 1em;
+    box-shadow: var(--post-shadow-color) 5px 5px;
+}
+article img {
+    max-width: 100%;
+}
+
+.readmore summary {
+    font-weight: bold;
+    color: var(--special-text-color);
+    list-style: none;
+    cursor: pointer;
+}
+
+header h1 a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--special-text-color);
+}
+
+header h1 a:visited {
+    color: inherit;
+}
+
+header h1 a:hover {
+    color: inherit;
+}
+
+.readmore div {
+    display: inline;
+}
+
+.readmore div p {
+    display: inline;
+}
+
+.readmore summary::-webkit-details-marker {
+  display: none;
+}
+
+.readmore[open] > summary {
+    border-bottom: 2px dashed var(--bg-color);
+    padding-bottom: .6em;
+    margin-bottom: .6em;
+}
+
+.post-header {
+    color: var(--special-text-color);
+    font-weight: bold;
+    padding: .5rem 0;
+    border-bottom: 4px double var(--outline-color);
+}
+
+.timestamp {
+    font-weight: normal;
+    font-size: smaller;
+    margin: .2em;
+    float: right;
+}
+
+.tag-item p {
+    font-size: smaller;
+}
+
+.photosetx2,
+.photosetx3 {
+    display: grid;
+    gap: 4px;
+    align-items: center;
+}
+
+.photosetx2 {grid-template-columns: 1fr 1fr;}
+.photosetx3 {grid-template-columns: 1fr 1fr 1fr;}
+
+.cropped {
+    width: 156px;
+    height: 156px;
+    overflow: hidden;
+    object-position: 25% 25%;
+}
+.photosetx2 img,
+.photosetx3 img {object-fit: cover;}
+
+.center { text-align: center; }
+
+.img-right {
+    max-width: 7.5em;
+    max-height: 7.5em;
+    float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.small-text {
+    font-size: 11px;
+    text-shadow: var(--bg-color) 1px 1px;
+}
+
+/* these are the mobile styles! */
+@media only screen and (max-width: 800px) {
+    #content {
+        flex-wrap: wrap;
+    }
+    #sidebar {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 0;
+    }
+    header {min-height: 110px;}
+    header > h1 { 
+        width: fit-content;
+        padding: .3em 1em;
+    }
+    nav > ul {
+    /* this stuff makes it wrap around on mobile */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    #bio {width: 50%;}
+    
+    #sidebar ul {
+        line-height: 2em;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+    #sidebar li {
+        margin: .3em 1em;
+    }
+}
+</style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+</head>
+<body>
+        <header><h1 id="Via Blog👀"><a href="https://example.com/">Via Blog👀</a></h1></header>
+<main>
+    
+    <div id="content">
+    <aside id="sidebar">
+        <div id="avatar">
+            
+            <img class="flower" src="/heads.png">
+            
+        </div>
+        
+        <div id="bio">
+        
+            <p>欢迎来到我的博客，</p>
+<p>这里是思想停泊的港湾，</p>
+<p>也是灵感起航的地方。</p>
+<p>愿每一次文字的交汇，</p>
+<p>都能点亮你内心的一束光。✨📖</p>
+
+        
+        </div>
+        
+        <div class="small-box">
+            
+                <ul>
+<li>作者：via</li>
+<li>年龄：26岁</li>
+<li>星座：处女座</li>
+<li>性别：男</li>
+<li>职业：python 开发</li>
+</ul>
+
+            
+            </ul>
+        </div>
+        
+        <nav>
+            <ul>
+            
+            
+                <li><a href="https://www.deepseek.com/">DeepSeek</a></li>
+            
+                <li><a href="https://github.com/">GitHub</a></li>
+            
+            
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <article id="top" class="clearfix">
+            
+            <section>
+            <div class="img-right">
+                <img src="/cat.png">
+            </div>
+            <div>
+            <h1>欢迎来到我的博客~!</h1>
+            
+                <p>越努力，越幸运🍀</p>
+            
+                <p>太阳☀️，它每时每刻都是夕阳🌇也都是旭日</p>
+            
+            </div>
+            </section>
+            <section>
+            <h4>博客关键词:</h4>
+                <ul>
+                
+                    <li>python 编程</li>
+                
+                    <li>AI大模型 使用技巧</li>
+                
+                    <li>日常分享 好书推荐</li>
+                
+                </ul>
+            </section>
+            
+        </article>
+    
+    
+    
+        <article>
+            <h2><a href="/posts/99-2024%E8%AF%BB%E4%B9%A6%E5%88%86%E4%BA%AB/">2024年度读书分享~</a></h2>
+            
+            tags:
+            
+            <a href="/tags/2024">2024</a>,
+            
+            <a href="/tags/%e5%8f%b2%e9%93%81%e7%94%9f">史铁生</a>,
+            
+            <a href="/tags/%e5%bf%83%e7%90%86%e8%af%bb%e7%89%a9">心理读物</a>,
+            
+            <a href="/tags/%e5%93%b2%e5%ad%a6">哲学</a>
+            
+            <div class="post-header">
+                @via <span class="timestamp">03/02/2025</span>
+            </div>
+            <p><p>​		2024年，陆陆续续看了一些书，有的是一口气读完的，有的则断断续续看了两个月。看的书比较杂，没什么系统规划，大多是偶然看到某本书，觉得有趣就买来读。平时更喜欢看纸质书，电子书总是读不完，手头还有好几本读到一半的电子书。今年读的这几本，都很喜欢，也推荐给了不少朋友，下面简单分享一下。</p>
+<h4 id="禅与摩托车维修艺术-罗伯特m波西格">《禅与摩托车维修艺术》—— 罗伯特·M·波西格</h4>
+<p>​		这本书的名字挺吸引人，禅和摩托车有什么关系呢？带着这个疑问，走进了波西格的世界。这本书不仅仅是关于摩托车维修的故事，更像是一场哲学与禅意的对话。波西格通过修车的经历，探讨了“良质”这个哲学概念，试图揭示生活中理性与感性的交织。书中的禅意提醒我们，生活中那些无法用逻辑解释的部分，往往是最深刻的理解来源。</p>
+<blockquote>
+<p>“良质是一种不可言说的存在，只有亲自体验过的人才能感受到它。”</p>
+<p>“如果一个人不能理解良质，那他就无法理解自己的生活。”</p></blockquote>
+<h4 id="透明社会-韩炳哲">《透明社会》—— 韩炳哲</h4>
+<p>​		这本书深刻剖析了现代社会的透明性与隐私之间的冲突。在互联网时代，信息过度透明，个人隐私几乎消失。韩炳哲用冷静的语言警示我们，透明社会带来了对个体的操控与压力。我们在追求透明的过程中，是否失去了独立性和隐私？这个问题在信息高速流动的今天，显得尤为深刻。</p>
+<blockquote>
+<p>“透明社会的核心是人们必须无所遁形。”</p>
+<p>“信息的过度透明，使得个体从内心的自由中被剥夺。”</p></blockquote>
+<h4 id="莱拉-一场对道德的探究-罗伯特m波西格">《莱拉 一场对道德的探究》—— 罗伯特·M·波西格</h4>
+<p>​		继《禅与摩托车维修艺术》之后，波西格的《莱拉》再次引发了对道德与人性的思考。这本书以哲学为背景，探讨了人类在追求自我、探索道德时的困惑与冲突。波西格通过莱拉的故事，挑战了现代社会的道德体系，问我们是否真的理解和遵循那些看似理所当然的道德准则。</p>
+<blockquote>
+<p>“道德，像所有伟大的真理一样，充满了模糊性。”</p>
+<p>“道德的判断不能仅凭表象，它需要深入人心。”</p></blockquote></p>
+            
+            <div class="photosetx2">
+                
+                <a href="" target="_blank"><img src=""></a>
+                
+                <a href="" target="_blank"><img src=""></a>
+                
+            </div>
+            
+            <div class="post-content readmore">
+                <div id="text-content"><h4 id="被讨厌的勇气-岸见一郎古贺史健">《被讨厌的勇气》—— 岸见一郎、古贺史健</h4>
+<p>​		这本书是自我成长与心理学的一个起点。书中的阿德勒心理学思想让人对“被讨厌”的恐惧有了新的认识。我们常常为了迎合他人而忽视自己的需求，而这本书则教会我们如何勇敢面对自己的真实感受，不再为取悦他人 …</p></div>
+                <div id="full-content" style="display: none;"><h4 id="被讨厌的勇气-岸见一郎古贺史健">《被讨厌的勇气》—— 岸见一郎、古贺史健</h4>
+<p>​		这本书是自我成长与心理学的一个起点。书中的阿德勒心理学思想让人对“被讨厌”的恐惧有了新的认识。我们常常为了迎合他人而忽视自己的需求，而这本书则教会我们如何勇敢面对自己的真实感受，不再为取悦他人而妥协。</p>
+<blockquote>
+<p>“我们最大的悲哀，是不敢做自己。”</p>
+<p>“不被他人喜爱是自由的开始。”</p></blockquote>
+<h4 id="蛤蟆先生去看心理医生-罗伯特戴博德">《蛤蟆先生去看心理医生》—— 罗伯特·戴博德</h4>
+<p>​		这本书通过蛤蟆先生和心理医生的对话，讲述了心理咨询的过程。虽然故事简单，但充满了智慧。它让人意识到，心理的成长与解脱，并不总是需要复杂的理论，有时只需要一场简单的对话，就能重新找回内心的平衡。</p>
+<blockquote>
+<p>“你总是追逐外部的答案，却从未停下来聆听自己的内心。”</p>
+<p>“走出迷茫的第一步，就是接受自己。”</p></blockquote>
+<h4 id="我的二本学生-黄灯">《我的二本学生》—— 黄灯</h4>
+<p>​		这本书提供了一个关于教育体系和学生生活的独特视角。黄灯用朴实的文字，讲述了自己作为“二本”学生如何在教育体制中坚持梦想与成长。它让人反思教育的真正意义，是否仅仅是为了社会流动，还是为了理解世界。</p>
+<blockquote>
+<p>“我不想成为一个合格的‘二本学生’，我更想成为一个有价值的人。”</p>
+<p>“教育的意义，不仅在于获取知识，更在于理解世界。”</p></blockquote>
+<h4 id="我的阿勒泰-李娟">《我的阿勒泰》—— 李娟</h4>
+<p>​		李娟的《我的阿勒泰》充满了情感，她通过讲述与家人、与自然的关系，展现了阿勒泰的原始美和生活的艰辛。这本书让人对生活在大自然中的人们产生了敬意，也让人思考如何在现代城市中找回那份宁静与和谐。</p>
+<blockquote>
+<p>“阿勒泰的风是冷的，但那是一种让人清醒的冷。”</p>
+<p>“我们常常忘记了最朴素的生活，直到它成为遥不可及的梦想。”</p></blockquote>
+<h4 id="苏菲的世界-乔斯坦贾德">《苏菲的世界》—— 乔斯坦·贾德</h4>
+<p>​		《苏菲的世界》是一本哲学入门书，用通俗的语言展示了西方哲学史。通过苏菲的故事，认识了柏拉图、康德、尼采等思想家的哲理。它让人意识到，哲学不仅仅是晦涩的理论，更是我们看待世界的一种方式。</p>
+<blockquote>
+<p>“哲学的终极问题是：我们从哪里来？我们要到哪里去？”</p>
+<p>“一切哲学的思考，都是关于生命与存在的深刻探讨。”</p></blockquote>
+<h4 id="病隙碎笔-史铁生">《病隙碎笔》—— 史铁生</h4>
+<p>​		史铁生的《病隙碎笔》记录了他在病榻上对生命、命运的深刻反思。书中的每一篇文字都充满了力量，让人意识到，即使身体遭遇极限，思想与灵魂依然可以自由飞翔。</p>
+<blockquote>
+<p>“病是人生的另一种方式，它教会我们用更深刻的眼光看待生活。”</p>
+<p>“无论身体多么沉重，思想依旧可以飞翔。”</p></blockquote>
+<h4 id="务虚笔记-史铁生">《务虚笔记》—— 史铁生</h4>
+<p>​		《务虚笔记》是史铁生的另一部作品，以简洁、理性的笔触记录了他在生活中的思考与感悟。这本书充满了智慧和冷静，虽然有些部分没太看懂，但值得再读一遍。</p>
+<blockquote>
+<p>“人活在世上，最怕的不是死亡，而是对生命的麻木。”</p>
+<p>“务虚，是为了更好地面对人生的虚无。”</p></blockquote></div>
+                
+        <summary id="read-more-btn" onclick="toggleReadMore()" style="display: inline;">more</summary>
+                
+            </div>
+            
+            <div class="photosetx3">
+                
+                <a href="" target="_blank"><img src=""></a>
+                
+                <a href="" target="_blank"><img src=""></a>
+                
+                <a href="" target="_blank"><img src=""></a>
+                
+            </div>
+            
+        </article>
+    
+    
+    <ul class="pagination pagination-default">
+      <li class="page-item">
+        <a href="/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/page/2/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/" aria-label="Page 1" class="page-link" role="button">1</a>
+      </li>
+      <li class="page-item">
+        <a href="/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 3" class="page-link" role="button">3</a>
+      </li>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul>
+    <script>
+    function toggleReadMore() {
+        var fullContent = document.getElementById("full-content");
+        var btnText = document.getElementById("read-more-btn");
+        var textContent = document.getElementById("text-content");
+
+        if (fullContent.style.display === "none") {
+            textContent.style.display = "none";
+            fullContent.style.display = "inline";
+            btnText.innerHTML = "less";
+        } else {
+            textContent.style.display = "inline";
+            fullContent.style.display = "none";
+            btnText.innerHTML = "more";
+        }
+    }
+    </script>
+    </main>
+
+    
+</main>
+</body>
+</html>

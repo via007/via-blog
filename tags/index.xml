@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tags on Via Blog👀</title>
+    <link>https://example.com/tags/</link>
+    <description>Recent content in tags on Via Blog👀</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 20 Feb 2025 10:56:54 +0800</lastBuildDate>
+    <atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>https://example.com/tags/ai/</link>
+      <pubDate>Thu, 20 Feb 2025 10:56:54 +0800</pubDate>
+      <guid>https://example.com/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DeepSeek</title>
+      <link>https://example.com/tags/deepseek/</link>
+      <pubDate>Thu, 20 Feb 2025 10:56:54 +0800</pubDate>
+      <guid>https://example.com/tags/deepseek/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>提示词</title>
+      <link>https://example.com/tags/%E6%8F%90%E7%A4%BA%E8%AF%8D/</link>
+      <pubDate>Thu, 20 Feb 2025 10:56:54 +0800</pubDate>
+      <guid>https://example.com/tags/%E6%8F%90%E7%A4%BA%E8%AF%8D/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>提问技巧</title>
+      <link>https://example.com/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Thu, 20 Feb 2025 10:56:54 +0800</pubDate>
+      <guid>https://example.com/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://example.com/tags/python/</link>
+      <pubDate>Mon, 10 Feb 2025 21:05:11 -0300</pubDate>
+      <guid>https://example.com/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>字符串</title>
+      <link>https://example.com/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/</link>
+      <pubDate>Mon, 10 Feb 2025 21:05:11 -0300</pubDate>
+      <guid>https://example.com/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2024</title>
+      <link>https://example.com/tags/2024/</link>
+      <pubDate>Mon, 03 Feb 2025 21:05:11 -0300</pubDate>
+      <guid>https://example.com/tags/2024/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>史铁生</title>
+      <link>https://example.com/tags/%E5%8F%B2%E9%93%81%E7%94%9F/</link>
+      <pubDate>Mon, 03 Feb 2025 21:05:11 -0300</pubDate>
+      <guid>https://example.com/tags/%E5%8F%B2%E9%93%81%E7%94%9F/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>哲学</title>
+      <link>https://example.com/tags/%E5%93%B2%E5%AD%A6/</link>
+      <pubDate>Mon, 03 Feb 2025 21:05:11 -0300</pubDate>
+      <guid>https://example.com/tags/%E5%93%B2%E5%AD%A6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>心理读物</title>
+      <link>https://example.com/tags/%E5%BF%83%E7%90%86%E8%AF%BB%E7%89%A9/</link>
+      <pubDate>Mon, 03 Feb 2025 21:05:11 -0300</pubDate>
+      <guid>https://example.com/tags/%E5%BF%83%E7%90%86%E8%AF%BB%E7%89%A9/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
