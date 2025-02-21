@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DeepSeek on Via Blog👀</title>
-    <link>https://example.com/tags/deepseek/</link>
+    <link>https://he-via.xyz/tags/deepseek/</link>
     <description>Recent content in DeepSeek on Via Blog👀</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 20 Feb 2025 10:56:54 +0800</lastBuildDate>
-    <atom:link href="https://example.com/tags/deepseek/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://he-via.xyz/tags/deepseek/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DeepSeek 提示词大全</title>
-      <link>https://example.com/posts/97-deepseek%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%A4%A7%E5%85%A8/</link>
+      <link>https://he-via.xyz/posts/97-deepseek%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%A4%A7%E5%85%A8/</link>
       <pubDate>Thu, 20 Feb 2025 10:56:54 +0800</pubDate>
-      <guid>https://example.com/posts/97-deepseek%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%A4%A7%E5%85%A8/</guid>
+      <guid>https://he-via.xyz/posts/97-deepseek%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%A4%A7%E5%85%A8/</guid>
       <description>&lt;h1 id=&#34;deepseek-提示词大全&#34;&gt;DeepSeek 提示词大全&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;仅供参考，具体情况可自行修改。点击 more 查看目录进行跳转&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>
