@@ -6,8 +6,15 @@
     <description>Recent content in DeepSeek on Via Blog👀</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Feb 2025 10:56:54 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 24 Feb 2025 10:13:14 +0800</lastBuildDate>
     <atom:link href="https://he-via.xyz/tags/deepseek/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DeepSeek 使用技巧：问题（提示词）轮转提高回答质量！</title>
+      <link>https://he-via.xyz/posts/96-deepseek%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A71/</link>
+      <pubDate>Mon, 24 Feb 2025 10:13:14 +0800</pubDate>
+      <guid>https://he-via.xyz/posts/96-deepseek%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A71/</guid>
+      <description>&lt;p&gt;分享一个特别实用的方法——“提示词轮转”。什么是提示词轮转？简单来说，就是将问题分步提问，每下一步提问时附带上一步的结果，即使它已经具备记忆和上下文功能。这种方法在写较长的文章时效果特别明显。&lt;/p&gt;&#xA;&lt;p&gt;像 DeepSeek 这样的语言模型本质上是基于概率统计的生成工具。它通过大规模的训练数据学习语言模式，当用户输入问题或提示词时，模型会根据提供的上下文，计算出最可能的词语序列作为回答。简单来说，它并不是“思考”或“理解”问题，而是通过统计匹配，生成与输入最相关、最符合语言规律的内容。&lt;/p&gt;&#xA;&lt;p&gt;接下来，我会结合理论和实际案例，看看如何用它提升 DeepSeek 的回答质量。&lt;/p&gt;&#xA;&lt;h3 id=&#34;一为什么需要提示词轮转&#34;&gt;一、为什么需要提示词轮转？&lt;/h3&gt;&#xA;&lt;p&gt;在使用 DeepSeek 这样的语言模型时，我们常常会直接抛出一个复杂问题，比如“帮我写一篇关于环保的文章”。虽然它能给出不错的回答，但结果往往不够深入，或者结构不够清晰。这是因为大模型在处理一次性的大任务时，容易“抓大放小”，忽略细节。而提示词轮转的核心思想是把复杂任务拆解成小步骤，逐步引导模型输出更精准、更高质量的内容。&lt;/p&gt;&#xA;&lt;h4 id=&#34;二提示词轮转的实际操作步骤&#34;&gt;二、提示词轮转的实际操作步骤&lt;/h4&gt;&#xA;&lt;p&gt;下面，我以写一篇大学生课程论文“社交媒体对心理健康的影响”为例，展示如何用它完成一篇结构清晰、内容充实的文章。&lt;/p&gt;&#xA;&lt;h5 id=&#34;第一步明确目标并拆解任务&#34;&gt;第一步：明确目标并拆解任务&lt;/h5&gt;&#xA;&lt;p&gt;&lt;strong&gt;提问示例&lt;/strong&gt;：“请写一段 150 字左右的引言，用学术风格介绍社交媒体的普及现状，以及它对心理健康影响的研究重要性。”&lt;/p&gt;</description>
+    </item>
     <item>
       <title>DeepSeek 提示词大全</title>
       <link>https://he-via.xyz/posts/97-deepseek%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%A4%A7%E5%85%A8/</link>
