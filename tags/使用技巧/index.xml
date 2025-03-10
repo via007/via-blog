@@ -6,8 +6,15 @@
     <description>Recent content in 使用技巧 on Via Blog👀</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Feb 2025 10:13:14 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 10 Mar 2025 09:22:56 +0800</lastBuildDate>
     <atom:link href="https://he-via.xyz/tags/%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI也需Plan B：让DeepSeek在回答中自检错误的4种方法</title>
+      <link>https://he-via.xyz/posts/94-deepseek%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A73/</link>
+      <pubDate>Mon, 10 Mar 2025 09:22:56 +0800</pubDate>
+      <guid>https://he-via.xyz/posts/94-deepseek%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A73/</guid>
+      <description>&lt;h3 id=&#34;为什么你的ai回答可能不靠谱&#34;&gt;&lt;strong&gt;为什么你的AI回答可能不靠谱？&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;“我用DeepSeek查最新政策，结果它引用了3年前的旧文件！”&#xA;“AI给的代码看起来能运行，结果一执行全是Bug&amp;hellip;”&lt;/p&gt;&#xA;&lt;p&gt;如果你也遇到过这些问题，说明你&lt;strong&gt;缺的不是工具，而是验证策略&lt;/strong&gt;。&#xA;本文将教你4个「无门槛提问技巧」，让AI自己检查答案。&lt;/p&gt;&#xA;&lt;h3 id=&#34;方法一预埋验证指令让ai先说我不确定&#34;&gt;方法一：预埋验证指令——让AI先说“我不确定”&lt;/h3&gt;&#xA;&lt;h4 id=&#34;使用场景&#34;&gt;&lt;strong&gt;使用场景&lt;/strong&gt;&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;医疗建议、法律条文、学术论文等容错率低的领域&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;操作模板直接复制&#34;&gt;&lt;strong&gt;操作模板（直接复制）&lt;/strong&gt;&lt;/h4&gt;</description>
+    </item>
     <item>
       <title>DeepSeek 使用技巧：问题（提示词）轮转提高回答质量！</title>
       <link>https://he-via.xyz/posts/96-deepseek%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A71/</link>
