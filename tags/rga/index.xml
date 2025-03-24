@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RGA on Via Blog👀</title>
+    <link>https://he-via.xyz/tags/rga/</link>
+    <description>Recent content in RGA on Via Blog👀</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 24 Mar 2025 20:43:00 +0800</lastBuildDate>
+    <atom:link href="https://he-via.xyz/tags/rga/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>最近都在讲的个人知识库，其背后的技术原理是什么？</title>
+      <link>https://he-via.xyz/posts/93-%E4%B8%AA%E4%BA%BA%E7%9F%A5%E8%AF%86%E5%BA%93/</link>
+      <pubDate>Mon, 24 Mar 2025 20:43:00 +0800</pubDate>
+      <guid>https://he-via.xyz/posts/93-%E4%B8%AA%E4%BA%BA%E7%9F%A5%E8%AF%86%E5%BA%93/</guid>
+      <description>&lt;p&gt;个人知识库最近成了热门话题，但你知道这背后有哪些技术在支撑吗？&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1上传文档文档的分块技术&#34;&gt;1、上传文档，文档的分块技术&lt;/h2&gt;&#xA;&lt;h3 id=&#34;怎么分块&#34;&gt;怎么分块？&lt;/h3&gt;&#xA;&lt;p&gt;当你把一份文档（比如一本PDF或Word文件）上传到个人知识库时，第一步就是要把这个“大块头”切成小块，这就是&lt;strong&gt;文档分块技术&lt;/strong&gt;。&lt;/p&gt;&#xA;&lt;p&gt;常见的几种分块方法包括：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;按固定长度分块&lt;/strong&gt;：比如每500字或1000字切一刀，简单直接，适合内容结构不太复杂的文档。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;按段落分块&lt;/strong&gt;：按照文档的自然段落来切，每个段落通常是一个完整的意思，适合结构清晰的文件。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;按语义分块&lt;/strong&gt;：这是更聪明的方法，用AI判断文本的语义转折点来切块。比如一篇文章从“市场分析”切换到“技术趋势”，AI能识别这个变化，精准分割。&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

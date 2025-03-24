@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="generator" content="Hugo 0.144.1">
+	<meta name="generator" content="Hugo 0.145.0">
     <title>Via Blog👀</title>
     <link rel="canonical" href="https://he-via.xyz/">
     
@@ -455,9 +455,9 @@ header h1 a:hover {
             <ul>
             
             
-                <li><a href="https://www.deepseek.com/">DeepSeek</a></li>
+                <li><a href="https://blog.csdn.net/weixin_43264001?type=blog">CSDN</a></li>
             
-                <li><a href="https://github.com/">GitHub</a></li>
+                <li><a href="https://github.com/via007">GitHub</a></li>
             
             
             </ul>
@@ -497,139 +497,110 @@ header h1 a:hover {
     
     
         <article>
-            <h2><a href="/posts/94-deepseek%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A73/">AI也需Plan B：让DeepSeek在回答中自检错误的4种方法</a></h2>
+            <h2><a href="/posts/93-%E4%B8%AA%E4%BA%BA%E7%9F%A5%E8%AF%86%E5%BA%93/">最近都在讲的个人知识库，其背后的技术原理是什么？</a></h2>
             
             tags:
             
-            <a href="/tags/DeepSeek">DeepSeek</a>,
+            <a href="/tags/%e4%b8%aa%e4%ba%ba%e7%9f%a5%e8%af%86%e5%ba%93">个人知识库</a>,
             
-            <a href="/tags/%e6%8f%90%e7%a4%ba%e8%af%8d">提示词</a>,
+            <a href="/tags/%e5%90%91%e9%87%8f%e5%8c%96">向量化</a>,
             
-            <a href="/tags/%e4%bd%bf%e7%94%a8%e6%8a%80%e5%b7%a7">使用技巧</a>
+            <a href="/tags/RGA">RGA</a>
             
             <div class="post-header">
-                @via <span class="timestamp">10/03/2025</span>
+                @via <span class="timestamp">24/03/2025</span>
             </div>
-            <p><h3 id="为什么你的ai回答可能不靠谱"><strong>为什么你的AI回答可能不靠谱？</strong></h3>
-<p>“我用DeepSeek查最新政策，结果它引用了3年前的旧文件！”
-“AI给的代码看起来能运行，结果一执行全是Bug&hellip;”</p>
-<p>如果你也遇到过这些问题，说明你<strong>缺的不是工具，而是验证策略</strong>。
-本文将教你4个「无门槛提问技巧」，让AI自己检查答案。</p>
-<h3 id="方法一预埋验证指令让ai先说我不确定">方法一：预埋验证指令——让AI先说“我不确定”</h3>
-<h4 id="使用场景"><strong>使用场景</strong></h4>
+            <p><p>个人知识库最近成了热门话题，但你知道这背后有哪些技术在支撑吗？</p>
+<hr>
+<h2 id="1上传文档文档的分块技术">1、上传文档，文档的分块技术</h2>
+<h3 id="怎么分块">怎么分块？</h3>
+<p>当你把一份文档（比如一本PDF或Word文件）上传到个人知识库时，第一步就是要把这个“大块头”切成小块，这就是<strong>文档分块技术</strong>。</p>
+<p>常见的几种分块方法包括：</p>
 <ul>
-<li>医疗建议、法律条文、学术论文等容错率低的领域</li>
-</ul>
-<h4 id="操作模板直接复制"><strong>操作模板（直接复制）</strong></h4></p>
+<li><strong>按固定长度分块</strong>：比如每500字或1000字切一刀，简单直接，适合内容结构不太复杂的文档。</li>
+<li><strong>按段落分块</strong>：按照文档的自然段落来切，每个段落通常是一个完整的意思，适合结构清晰的文件。</li>
+<li><strong>按语义分块</strong>：这是更聪明的方法，用AI判断文本的语义转折点来切块。比如一篇文章从“市场分析”切换到“技术趋势”，AI能识别这个变化，精准分割。</li>
+</ul></p>
             
             <div class="post-content readmore">
-                <div id="text-content"><pre tabindex="0"><code>请按以下步骤回答：  
-1. 先确认以下信息的可靠性：  
-   - 是否为行业共识？  
-   - 是否有权威来源支撑？  
-   - 是否存在争议观点？  
-2. 如果信息存疑，请明确标注「需进一步验证」  
-3. …</code></pre></div>
-                <div id="full-content" style="display: none;"><pre tabindex="0"><code>请按以下步骤回答：  
-1. 先确认以下信息的可靠性：  
-   - 是否为行业共识？  
-   - 是否有权威来源支撑？  
-   - 是否存在争议观点？  
-2. 如果信息存疑，请明确标注「需进一步验证」  
-3. 最后给出正式回答  
-
-问题：[你的问题]  
-</code></pre><h4 id="案例对比"><strong>案例对比</strong></h4>
+                <div id="text-content"><h3 id="技术原理">技术原理</h3>
+<p>以<strong>按语义分块</strong>为例，它背后用到了自然语言处理（NLP）的技术，核心是<strong>语义相似度</strong>。具体过程是这样的：</p>
+<ol>
+<li>先把文档初步切成小单元，比如句子或短段落。</li>
+<li>用一个预训练的AI模型（比如Sentence-BERT）把每个单元转成一串数字（ …</li></ol></div>
+                <div id="full-content" style="display: none;"><h3 id="技术原理">技术原理</h3>
+<p>以<strong>按语义分块</strong>为例，它背后用到了自然语言处理（NLP）的技术，核心是<strong>语义相似度</strong>。具体过程是这样的：</p>
+<ol>
+<li>先把文档初步切成小单元，比如句子或短段落。</li>
+<li>用一个预训练的AI模型（比如Sentence-BERT）把每个单元转成一串数字（叫<strong>向量</strong>），这串数字代表了文本的语义。</li>
+<li>计算相邻单元向量的相似度。如果相似度很高，说明它们属于同一个话题；如果突然变低，说明话题变了，就在这里切一刀。</li>
+</ol>
+<p>这样，每个小块就是一个独立的“知识单元”，为后面的处理打好基础。</p>
+<hr>
+<h2 id="2分块之后对文本进行向量化处理存储">2、分块之后，对文本进行向量化处理，存储</h2>
+<p>分好块后，下一步是对这些小块文本进行<strong>向量化处理</strong>，然后存起来。</p>
+<h3 id="什么是向量化">什么是向量化？</h3>
+<p>向量化就是把文字变成一串数字（向量），这串数字能反映文字的语义。意思相近的文本，向量也“长得像”。比如，“猫喜欢吃鱼”和“狗喜欢吃骨头”转成向量后，它们在某些维度上会很接近，因为都跟“宠物饮食”有关。</p>
+<h3 id="怎么实现">怎么实现？</h3>
+<p>向量化靠的是<strong>预训练语言模型</strong>，比如BERT或GPT。这些模型在海量文本上训练过，能理解语言的深层含义。你把一个小块文本丢给它，它就吐出一个向量。比如：</p>
 <ul>
-<li><strong>错误问法</strong>
-“北京购房的最新限购政策是什么？”</li>
-<li><strong>正确问法</strong>
-“请先确认2023年最新政策，再回答：北京购房的限购政策是什么？若有地方性特殊规定请重点说明”</li>
+<li>“猫喜欢吃鱼” → [0.1, 0.5, 0.3, &hellip;]</li>
+<li>“狗喜欢吃骨头” → [0.2, 0.4, 0.3, &hellip;]</li>
 </ul>
-<h3 id="方法二分级回答模式3秒判断可信度">方法二：分级回答模式——3秒判断可信度</h3>
-<h4 id="使用场景-1"><strong>使用场景</strong></h4>
+<h3 id="存储到哪里">存储到哪里？</h3>
+<p>这些向量会被存到<strong>向量数据库</strong>里，比如FAISS或Pinecone。为什么要用向量数据库呢？因为普通数据库只能存文字或数字，而向量数据库能高效存储和检索这些语义向量。它的厉害之处在于：</p>
 <ul>
-<li>预测类问题（股票/赛事）、主观建议（产品推荐）</li>
+<li><strong>语义搜索</strong>：你问一个问题，系统把问题转成向量，然后在数据库里找到最相似的向量（也就是最相关的文本块）。</li>
+<li><strong>快速定位</strong>：通过计算向量间的“距离”（比如余弦相似度），瞬间找到匹配内容。</li>
 </ul>
-<pre tabindex="0"><code>请分三级回答：  
-✅ 高置信度：有明确证据支持  
-⚠️ 中置信度：存在部分佐证但需验证  
-❌ 低置信度：仅为推测或经验判断  
-
-问题：[你的问题]  
-</code></pre><h4 id="经典案例"><strong>经典案例</strong></h4>
+<p>简单说，向量数据库就像一个超级聪明的“语义搜索引擎”。</p>
+<hr>
+<h2 id="3rag技术">3、RAG技术</h2>
+<h3 id="什么是rag">什么是RAG？</h3>
+<p><strong>RAG</strong>（Retrieval-Augmented Generation，检索增强生成）是个人知识库的核心技术。它让AI在回答问题时，不只靠自己脑子里的“老知识”，还能从你的知识库里实时找资料，生成更准确、更贴合你需求的回答。</p>
+<h3 id="工作原理">工作原理</h3>
+<p>RAG的流程分两步：</p>
+<ol>
+<li>
+<p><strong>检索（Retrieval）</strong>：</p>
 <ul>
-<li><strong>提问</strong>
-“量子计算机十年内能取代传统计算机吗？”</li>
-<li><strong>AI回复</strong></li>
+<li>你提一个问题，系统先把问题转成向量。</li>
+<li>在向量数据库里，找到与问题向量最相似的几个文本块，这些就是最相关的“知识片段”。</li>
 </ul>
-<pre tabindex="0"><code>⚠️ 中置信度：  
-当前量子计算机仍处实验室阶段，但IBM等公司预测2030年可能突破...  
-❌ 低置信度：  
-关于「取代传统计算机」的说法暂无可靠证据  
-</code></pre><h3 id="方法三时间锁指令屏蔽过期信息">方法三：时间锁指令——屏蔽过期信息</h3>
-<h4 id="使用场景-2"><strong>使用场景</strong></h4>
+</li>
+<li>
+<p><strong>生成（Generation）</strong>：</p>
 <ul>
-<li>政策法规、科技进展、软件教程等时效敏感内容</li>
+<li>把检索到的文本块和问题一起喂给大模型（比如DeepSe ek）。</li>
+<li>大模型根据这些信息，生成一个流畅的回答。</li>
 </ul>
-<h4 id="防过时模板"><strong>防过时模板</strong></h4>
-<pre tabindex="0"><code>请确保：  
-1. 仅使用2025年1月之后发布的资料  
-2. 若必须引用旧内容，需标注「该信息可能已过时」  
-3. 优先选择来源中的最新3条结果  
-
-问题：[你的问题]  
-</code></pre><h4 id="避坑案例"><strong>避坑案例</strong></h4>
+</li>
+</ol>
+<h3 id="为什么牛">为什么牛？</h3>
 <ul>
-<li><strong>错误问法</strong>
-“Python异步编程的最佳实践是什么？”</li>
-<li><strong>正确问法</strong>
-“请根据2024年后更新的资料，提供Python异步编程最新最佳实践”</li>
+<li><strong>精准</strong>：回答基于你的真实数据，不瞎编。</li>
+<li><strong>实时</strong>：能用最新的知识库内容，随时更新。</li>
+<li><strong>个性化</strong>：完全贴合你的文档，回答更符合你的需求。</li>
 </ul>
-<h4 id="注意事项"><strong>注意事项</strong></h4>
+<p>打个比方，RAG就像一个助理，先翻书找到答案，再用自己的话讲给你听。</p>
+<hr>
+<h2 id="4生成最终回答">4、生成最终回答</h2>
+<h3 id="大模型怎么干活">大模型怎么干活？</h3>
+<p>到了这一步，大模型（DeepSeek）拿到问题和检索到的文本块后，开始“开工”：</p>
+<ol>
+<li><strong>理解上下文</strong>：大模型会把问题和文本块当作一个整体来看，确保回答既回答了问题，又符合知识库内容。</li>
+<li><strong>生成文本</strong>：利用它强大的语言能力，模型把检索到的信息整合成一句句通顺的话。</li>
+<li><strong>优化输出</strong>：有些系统还会再调整一下，比如去掉多余信息、让语气更自然，提升你的阅读体验。</li>
+</ol>
+<hr>
+<h2 id="结语">结语</h2>
+<p>个人知识库之所以这么强大，靠的就是这几步技术：</p>
 <ul>
-<li>警惕无时间标注的内容（可追加提问：“这条信息的发布日期是？”）</li>
-<li>日期格式统一为<code>YYYY-MM-DD</code>避免歧义</li>
-</ul>
-<h3 id="方法四自检指令让ai自己当裁判">方法四：自检指令——让AI自己当裁判</h3>
-<h4 id="使用场景-3"><strong>使用场景</strong></h4>
-<ul>
-<li>代码编写、数学计算、方案设计等可验证场景</li>
-</ul>
-<h4 id="自检模板"><strong>自检模板</strong></h4>
-<pre tabindex="0"><code>请按以下要求回答：  
-1. 给出解决方案  
-2. 附带3个验证方法  
-3. 说明如何检测答案的正确性  
-
-问题：[你的问题]  
-</code></pre><h4 id="实操案例"><strong>实操案例</strong></h4>
-<ul>
-<li><strong>提问</strong>
-“如何用Excel计算两个日期间的工作日天数？”</li>
-<li><strong>AI回复</strong></li>
-</ul>
-<pre tabindex="0"><code>解决方案：使用NETWORKDAYS函数  
-验证方法：  
-1. 对比手动计算2023-10月的天数  
-2. 检查是否自动排除国庆假期  
-3. 输入结束日期早于开始日期时应报错  
-</code></pre><h4 id="安全提示"><strong>安全提示</strong></h4>
-<ul>
-<li>禁止直接执行AI生成的代码（即使它说有测试用例）</li>
-<li>复杂计算建议用计算器二次验证</li>
-</ul>
-<h3 id="终极组合拳重要问题这样问"><strong>终极组合拳：重要问题这样问</strong></h3>
-<pre tabindex="0"><code>请按以下步骤回答：  
-1. 仅使用2024年后的资料  
-2. 分三级标注置信度（✅/⚠️/❌）  
-3. 提供3个验证方法  
-
-问题：[你的问题]  
-</code></pre><h3 id="结语从被动接受到主动掌控"><strong>结语：从被动接受，到主动掌控</strong></h3>
-<p>“智能工具用不好，反而会被工具误导。”
-这4个方法的核心不是技术，而是<strong>批判性思维的外挂</strong>。
-记住：真正聪明的提问者，永远会给AI装上「安全带」。</p></div>
+<li><strong>文档分块</strong>：把大文件切成小块，方便处理。</li>
+<li><strong>向量化存储</strong>：把文本变成向量，实现语义搜索。</li>
+<li><strong>RAG技术</strong>：检索+生成，让回答更精准。</li>
+<li><strong>大模型生成</strong>：把信息变成流畅的回答。</li>
+</ul></div>
                 
         <summary id="read-more-btn" onclick="toggleReadMore()" style="display: inline;">more</summary>
                 
@@ -664,7 +635,7 @@ header h1 a:hover {
         <a href="/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
       </li>
       <li class="page-item">
-        <a href="/page/6/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="/page/7/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
     <script>

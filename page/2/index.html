@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="generator" content="Hugo 0.144.1">
+	<meta name="generator" content="Hugo 0.145.0">
     <title>Via Blog👀</title>
     <link rel="canonical" href="https://he-via.xyz/">
     
@@ -455,9 +455,9 @@ header h1 a:hover {
             <ul>
             
             
-                <li><a href="https://www.deepseek.com/">DeepSeek</a></li>
+                <li><a href="https://blog.csdn.net/weixin_43264001?type=blog">CSDN</a></li>
             
-                <li><a href="https://github.com/">GitHub</a></li>
+                <li><a href="https://github.com/via007">GitHub</a></li>
             
             
             </ul>
@@ -497,1113 +497,139 @@ header h1 a:hover {
     
     
         <article>
-            <h2><a href="/posts/95-deepseek%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A72/">DeepSeek提示词轮转：30个领域教你一步步解决问题</a></h2>
+            <h2><a href="/posts/94-deepseek%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A73/">AI也需Plan B：让DeepSeek在回答中自检错误的4种方法</a></h2>
             
             tags:
             
             <a href="/tags/DeepSeek">DeepSeek</a>,
             
-            <a href="/tags/%e6%8f%90%e7%a4%ba%e8%af%8d">提示词</a>
+            <a href="/tags/%e6%8f%90%e7%a4%ba%e8%af%8d">提示词</a>,
+            
+            <a href="/tags/%e4%bd%bf%e7%94%a8%e6%8a%80%e5%b7%a7">使用技巧</a>
             
             <div class="post-header">
-                @via <span class="timestamp">03/03/2025</span>
+                @via <span class="timestamp">10/03/2025</span>
             </div>
-            <p><h2 id="deepseek提示词轮转30个领域教你一步步解决问题">DeepSeek提示词轮转：30个领域教你一步步解决问题</h2>
-<h3 id="1-学术领域撰写研究论文">1. <strong>学术领域：撰写研究论文</strong></h3>
-<p><strong>目标</strong>：写一篇关于某个主题的研究论文，比如“气候变化对农业的影响”。
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>确定研究主题和问题</strong>
+            <p><h3 id="为什么你的ai回答可能不靠谱"><strong>为什么你的AI回答可能不靠谱？</strong></h3>
+<p>“我用DeepSeek查最新政策，结果它引用了3年前的旧文件！”
+“AI给的代码看起来能运行，结果一执行全是Bug&hellip;”</p>
+<p>如果你也遇到过这些问题，说明你<strong>缺的不是工具，而是验证策略</strong>。
+本文将教你4个「无门槛提问技巧」，让AI自己检查答案。</p>
+<h3 id="方法一预埋验证指令让ai先说我不确定">方法一：预埋验证指令——让AI先说“我不确定”</h3>
+<h4 id="使用场景"><strong>使用场景</strong></h4>
 <ul>
-<li>想想你感兴趣的话题，比如“气候变化”。然后缩小范围，选一个具体问题，比如“气候变化会怎样影响水稻产量？”</li>
-<li>写下这个主题和问题，贴在笔记本上，提醒自己这是论文的核心。</li>
-</ul>
-</li>
-<li><strong>撰写文献综述</strong>
-<ul>
-<li>到图书馆或网上（如谷歌学术）找5-10篇关于气候变化和农业的文章。</li>
-<li>读每篇文章的摘要，记下它们说了什么，比如“高温会降低水稻产量”。然后写一段话总结这些发现，还要指出它们没解决的问题，比如“很少研究中国的情况”。</li>
-</ul>
-</li>
-<li><strong>设计研究方法</strong>
-<ul>
-<li>决定怎么研究，比如“收集某个地区的数据来分析”。</li>
-<li>写下具体计划：找中国某个省过去10年的温度和水稻产量数据，用电脑表格记录，然后比较温度升高时产量变化。</li>
-</ul>
-</li>
-<li><strong>分析数据并讨论结果</strong>
-<ul>
-<li>把数据输入Excel，做个图表，看看温度高时产量是不是真的下降了。</li>
-<li>写几段话解释，比如“温度每升高1度，产量下降5%”，并说说这对农民意味着什么。</li>
-</ul>
-</li>
-<li><strong>撰写结论和未来方向</strong>
-<ul>
-<li>总结你的发现，比如“气候变化确实影响水稻产量”。</li>
-<li>建议下一步，比如“政府可以推广耐热的种子”。最后把所有部分拼成一篇完整的论文。</li>
-</ul>
-</li>
-</ol>
-<hr></p>
+<li>医疗建议、法律条文、学术论文等容错率低的领域</li>
+</ul></p>
             
             <div class="post-content readmore">
-                <div id="text-content"><h3 id="2-技术领域编写编程教程">2. <strong>技术领域：编写编程教程</strong></h3>
-<p><strong>目标</strong>：教别人学会用Python写循环。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>确定主题和读者</strong>
-<ul>
-<li>选一个简单主题，比如“Python循环”，目标是教给没学过编程的人。</li>
-<li>写下：“我要教新手用循环重复做事。”</li>
-</ul>
-</li>
-<li><strong>解释基础概念</strong>
-<ul>
-<li>用简单的话 …</li></ul></li></li></ul></li></ol></div>
-                <div id="full-content" style="display: none;"><h3 id="2-技术领域编写编程教程">2. <strong>技术领域：编写编程教程</strong></h3>
-<p><strong>目标</strong>：教别人学会用Python写循环。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>确定主题和读者</strong>
-<ul>
-<li>选一个简单主题，比如“Python循环”，目标是教给没学过编程的人。</li>
-<li>写下：“我要教新手用循环重复做事。”</li>
-</ul>
-</li>
-<li><strong>解释基础概念</strong>
-<ul>
-<li>用简单的话写一段：循环是让电脑重复做一件事，比如打印1到10。</li>
-<li>举个生活例子：就像每天刷牙一样，重复但有规律。</li>
-</ul>
-</li>
-<li><strong>提供简单代码示例</strong>
-<ul>
-<li>写代码：<code>for i in range(1, 11): print(i)</code></li>
-<li>解释：<code>range(1, 11)</code>是1到10的数字，<code>print(i)</code>是每次打印一个数。</li>
-<li>让读者自己敲代码，运行看看结果。</li>
-</ul>
-</li>
-<li><strong>展示进阶应用</strong>
-<ul>
-<li>写个复杂点的代码：<code>fruits = ['苹果', '香蕉', '橙子']; for fruit in fruits: print(fruit)</code></li>
-<li>解释：这会把列表里的每个水果打印出来，就像从篮子里一个个拿出来。</li>
-</ul>
-</li>
-<li><strong>总结并给出建议</strong>
-<ul>
-<li>写总结：“循环能让电脑重复工作，很实用。”</li>
-<li>给作业：让读者写代码打印5个自己的爱好。</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="3-商业领域制定营销策略">3. <strong>商业领域：制定营销策略</strong></h3>
-<p><strong>目标</strong>：为产品（比如智能手表）设计推广计划。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>明确产品和市场</strong>
-<ul>
-<li>写下你要卖什么，比如“智能手表”，和谁会买，比如“20-35岁的年轻人”。</li>
-<li>在纸上列出产品的特点：计步、心率监测。</li>
-</ul>
-</li>
-<li><strong>分析趋势和竞争</strong>
-<ul>
-<li>上网查“智能手表市场趋势”，记下热门点，比如“健康功能很受欢迎”。</li>
-<li>找3个竞争对手，看他们的广告怎么做的，比如“苹果手表主打时尚”。</li>
-</ul>
-</li>
-<li><strong>制定推广计划</strong>
-<ul>
-<li>决定用什么方式推广：微信朋友圈发广告，找抖音网红试用。</li>
-<li>写下广告内容：“这款手表帮你每天关注健康！”</li>
-</ul>
-</li>
-<li><strong>设定预算和时间</strong>
-<ul>
-<li>算钱：广告费500元，网红合作1000元，总共1500元。</li>
-<li>定时间：下个月1号到15号推广。</li>
-</ul>
-</li>
-<li><strong>评估并调整策略</strong>
-<ul>
-<li>推广后看效果：卖了多少？广告点了多少次？</li>
-<li>如果卖得不好，改改广告词或换个网红。</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="4-创意写作写短篇小说">4. <strong>创意写作：写短篇小说</strong></h3>
-<p><strong>目标</strong>：写一个关于友谊的小故事。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>确定主题和角色</strong>
-<ul>
-<li>选主题：友谊和误会。</li>
-<li>想两个角色：小明（开朗）和小红（敏感）。</li>
-</ul>
-</li>
-<li><strong>构建故事大纲</strong>
-<ul>
-<li>分4部分：开头（两人是好朋友）、发展（小红误会小明）、高潮（吵架）、结尾（和解）。</li>
-<li>在纸上写下每部分一句话。</li>
-</ul>
-</li>
-<li><strong>撰写开场和冲突</strong>
-<ul>
-<li>开头：写“周末，小明和小红一起去公园玩”。</li>
-<li>冲突：写“小红听到小明跟别人说她坏话，其实是误会”。</li>
-</ul>
-</li>
-<li><strong>发展高潮和结局</strong>
-<ul>
-<li>高潮：写“两人大吵一架，小红跑回家”。</li>
-<li>结局：写“小明解释清楚，两人抱在一起哭”。</li>
-</ul>
-</li>
-<li><strong>润色和修改</strong>
-<ul>
-<li>读一遍，改掉不顺的句子，比如把“小红很生气”改成“小红气得脸都红了”。</li>
-<li>加点细节，比如“公园里风吹过，树叶沙沙响”。</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="5-数据分析撰写报告">5. <strong>数据分析：撰写报告</strong></h3>
-<p><strong>目标</strong>：分析公司销售数据，写报告。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>明确目标和数据</strong>
-<ul>
-<li>目标：看看去年销售好不好。</li>
-<li>数据：找公司去年的月销售记录（比如Excel表）。</li>
-</ul>
-</li>
-<li><strong>清洗数据</strong>
-<ul>
-<li>打开表格，删掉重复的行（比如1月写了两次）。</li>
-<li>检查有没有空单元格，填上0或问老板要数据。</li>
-</ul>
-</li>
-<li><strong>执行统计分析</strong>
-<ul>
-<li>用Excel算每月的平均销售：选数字，点“平均值”功能。</li>
-<li>看哪个月最高、最低，记下来。</li>
-</ul>
-</li>
-<li><strong>可视化结果</strong>
-<ul>
-<li>在Excel里选数据，点“插入折线图”，看看销售趋势。</li>
-<li>保存图，贴到报告里。</li>
-</ul>
-</li>
-<li><strong>总结并提建议</strong>
-<ul>
-<li>写总结：“7月卖得最好，2月最差。”</li>
-<li>建议：“7月多进货，2月做促销。”</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="6-日常生活规划旅行">6. <strong>日常生活：规划旅行</strong></h3>
-<p><strong>目标</strong>：计划一次去上海的旅行。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>确定目的地和预算</strong>
-<ul>
-<li>选地方：上海。</li>
-<li>定预算：2000元，包括车票和住宿。</li>
-</ul>
-</li>
-<li><strong>选择交通和住宿</strong>
-<ul>
-<li>上12306查火车票，挑便宜的（比如100元往返）。</li>
-<li>在携程找酒店，选每晚200元的。</li>
-</ul>
-</li>
-<li><strong>规划行程和活动</strong>
-<ul>
-<li>第1天：外滩看夜景。</li>
-<li>第2天：逛南京路，买点纪念品。</li>
-<li>写在日历上，别忘了时间。</li>
-</ul>
-</li>
-<li><strong>准备行李和文件</strong>
-<ul>
-<li>打包：衣服、充电器、身份证。</li>
-<li>检查火车票打印好没。</li>
-</ul>
-</li>
-<li><strong>总结旅行经验</strong>
-<ul>
-<li>回来后记笔记：外滩很美，但人多。</li>
-<li>下次改进：避开节假日。</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="7-健康与健身制定锻炼计划">7. <strong>健康与健身：制定锻炼计划</strong></h3>
-<p><strong>目标</strong>：一个月减2斤。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>设定目标和时间</strong>
-<ul>
-<li>目标：减2斤。</li>
-<li>时间：每周锻炼4天，每天地30分钟。</li>
-</ul>
-</li>
-<li><strong>选择锻炼类型</strong>
-<ul>
-<li>挑两种：跑步（有氧）和仰卧起坐（力量）。</li>
-<li>跑步消耗脂肪，仰卧起坐练腹肌。</li>
-</ul>
-</li>
-<li><strong>制定每周计划</strong>
-<ul>
-<li>周一：跑步30分钟。</li>
-<li>周三：跑步+20个仰卧起坐。</li>
-<li>周五、周日一样，写在日历上。</li>
-</ul>
-</li>
-<li><strong>记录进展和调整</strong>
-<ul>
-<li>每次跑完用手机记：跑了3公里，做了20个仰卧起坐。</li>
-<li>每周称体重，没减就多跑10分钟。</li>
-</ul>
-</li>
-<li><strong>总结并设新目标</strong>
-<ul>
-<li>一个月后看体重，减了2斤就庆祝。</li>
-<li>新目标：再减1斤，或跑5公里。</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="8-教育与学习备考课程">8. <strong>教育与学习：备考课程</strong></h3>
-<p><strong>目标</strong>：准备数学考试，考80分以上。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>了解考试内容</strong>
-<ul>
-<li>问老师或看书，考试有代数和几何。</li>
-<li>记下重点：解方程、三角形面积。</li>
-</ul>
-</li>
-<li><strong>制定学习计划</strong>
-<ul>
-<li>每天1小时，周一学代数，周三学几何。</li>
-<li>写在笔记本上，每天勾掉完成的部分。</li>
-</ul>
-</li>
-<li><strong>复习和做题</strong>
-<ul>
-<li>看课本第1章，记公式：ax + b = 0。</li>
-<li>找5道练习题做，比如“解2x + 3 = 7”。</li>
-</ul>
-</li>
-<li><strong>模拟考试</strong>
-<ul>
-<li>拿张往年试卷，定2小时做完。</li>
-<li>自己批改，看错哪了。</li>
-</ul>
-</li>
-<li><strong>总结错题</strong>
-<ul>
-<li>把错题抄下来，比如“三角形面积算错了”。</li>
-<li>再做5道类似题，直到全会。</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="9-家庭生活组织聚会">9. <strong>家庭生活：组织聚会</strong></h3>
-<p><strong>目标</strong>：办一次生日聚会。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>确定目的和日期</strong>
-<ul>
-<li>目的：庆祝生日。</li>
-<li>日期：下周六晚上6点。</li>
-</ul>
-</li>
-<li><strong>选择地点和活动</strong>
-<ul>
-<li>地点：家里客厅。</li>
-<li>活动：吃蛋糕、玩桌游。</li>
-</ul>
-</li>
-<li><strong>准备食物和装饰</strong>
-<ul>
-<li>食物：买个8寸蛋糕，做10个三明治。</li>
-<li>装饰：挂5个气球，贴“生日快乐”字。</li>
-</ul>
-</li>
-<li><strong>邀请并确认</strong>
-<ul>
-<li>微信发消息给5个朋友：“周六6点我家生日聚会，来吗？”</li>
-<li>统计谁能来，记下人数。</li>
-</ul>
-</li>
-<li><strong>总结和感谢</strong>
-<ul>
-<li>聚会后发微信：“谢谢大家，太开心了！”</li>
-<li>发几张照片留念。</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="10-职业发展准备面试">10. <strong>职业发展：准备面试</strong></h3>
-<p><strong>目标</strong>：准备一份销售工作的面试。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>研究公司和职位</strong>
-<ul>
-<li>上公司网站，看他们卖什么，比如“运动鞋”。</li>
-<li>看职位要求：需要会沟通、懂销售。</li>
-</ul>
-</li>
-<li><strong>准备简历和介绍</strong>
-<ul>
-<li>把简历改改，写上“我做过1年销售，业绩增长20%”。</li>
-<li>准备介绍：“我叫小李，喜欢和人打交道，有销售经验。”</li>
-</ul>
-</li>
-<li><strong>练习常见问题</strong>
-<ul>
-<li>写下问题：“你的优势是什么？”</li>
-<li>回答：“我沟通能力强，客户都喜欢我。”对着镜子练5遍。</li>
-</ul>
-</li>
-<li><strong>准备着装和材料</strong>
-<ul>
-<li>挑衣服：白衬衫+西裤，干净整齐。</li>
-<li>带上：简历2份、身份证。</li>
-</ul>
-</li>
-<li><strong>反思和跟进</strong>
-<ul>
-<li>面试后想想：哪里答得不好？</li>
-<li>发邮件：“谢谢面试机会，期待回复。”</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="11-艺术与设计创作一幅画">11. <strong>艺术与设计：创作一幅画</strong></h3>
-<p><strong>目标</strong>：画一幅海边的画。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>确定主题和风格</strong>
-<ul>
-<li>主题：海边日落。</li>
-<li>风格：简单水彩风。</li>
-</ul>
-</li>
-<li><strong>准备材料</strong>
-<ul>
-<li>买：水彩纸、水彩颜料、3号画笔。</li>
-<li>放桌上，准备一杯水清洗笔。</li>
-</ul>
-</li>
-<li><strong>草稿和构图</strong>
-<ul>
-<li>用铅笔在纸上轻轻画：左边海，右边太阳，天空一条线。</li>
-<li>检查：太阳别太大，海占一半纸。</li>
-</ul>
-</li>
-<li><strong>上色和细节</strong>
-<ul>
-<li>用蓝色涂海，橙色涂太阳，慢慢晕开颜色。</li>
-<li>加细节：在海上画几条波纹。</li>
-</ul>
-</li>
-<li><strong>评估和修改</strong>
-<ul>
-<li>画完退后看：颜色够不够鲜艳？</li>
-<li>不够就再涂一层橙色太阳。</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="12-旅游规划制定行程">12. <strong>旅游规划：制定行程</strong></h3>
-<p><strong>目标</strong>：计划3天北京游。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>选择目的地</strong>
-<ul>
-<li>定：北京。</li>
-<li>写下原因：想看故宫和长城。</li>
-</ul>
-</li>
-<li><strong>研究景点和活动</strong>
-<ul>
-<li>上网查：故宫、天安门、长城开门时间和票价。</li>
-<li>记下：故宫票60元，长城45元。</li>
-</ul>
-</li>
-<li><strong>安排交通和住宿</strong>
-<ul>
-<li>买高铁票：往返300元。</li>
-<li>订酒店：每晚150元，近地铁。</li>
-</ul>
-</li>
-<li><strong>制定每日行程</strong>
-<ul>
-<li>第1天：天安门+故宫。</li>
-<li>第2天：长城。</li>
-<li>第3天：逛胡同，下午回。</li>
-</ul>
-</li>
-<li><strong>准备旅行必备品</strong>
-<ul>
-<li>打包：衣服、身份证、充电器。</li>
-<li>带500元现金应急。</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="13-环境保护组织清洁活动">13. <strong>环境保护：组织清洁活动</strong></h3>
-<p><strong>目标</strong>：清理小区公园垃圾。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>确定清洁地点</strong>
-<ul>
-<li>选：小区旁的小公园。</li>
-<li>去看：记下垃圾多的地方，比如湖边。</li>
-</ul>
-</li>
-<li><strong>招募志愿者</strong>
-<ul>
-<li>在微信群发：“周日9点公园捡垃圾，谁来？”</li>
-<li>目标：找5个人。</li>
-</ul>
-</li>
-<li><strong>准备清洁工具</strong>
-<ul>
-<li>买：10个垃圾袋、5双手套，超市花20元。</li>
-<li>带上水，大家渴了喝。</li>
-</ul>
-</li>
-<li><strong>执行清洁活动</strong>
-<ul>
-<li>周日9点集合，分垃圾袋，每人捡1小时。</li>
-<li>垃圾装满就扔垃圾桶。</li>
-</ul>
-</li>
-<li><strong>总结和宣传</strong>
-<ul>
-<li>拍照片：捡前脏、捡后干净。</li>
-<li>发朋友圈：“公园变美了，下次再来！”</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="14-社会问题撰写分析报告">14. <strong>社会问题：撰写分析报告</strong></h3>
-<p><strong>目标</strong>：写关于“空气污染”的报告。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>选择社会问题</strong>
-<ul>
-<li>选：空气污染。</li>
-<li>写下：想知道它怎么影响健康。</li>
-</ul>
-</li>
-<li><strong>收集数据和案例</strong>
-<ul>
-<li>上网查：PM2.5数据，北京去年超标50天。</li>
-<li>找案例：某地雾霾致呼吸病上升。</li>
-</ul>
-</li>
-<li><strong>分析原因和影响</strong>
-<ul>
-<li>原因：写“工厂排放、汽车尾气”。</li>
-<li>影响：写“小孩容易得哮喘”。</li>
-</ul>
-</li>
-<li><strong>提出解决方案</strong>
-<ul>
-<li>建议：多用公交，工厂装过滤器。</li>
-<li>每条写一句解释。</li>
-</ul>
-</li>
-<li><strong>撰写报告</strong>
-<ul>
-<li>分段：开头（问题）、数据、原因、建议。</li>
-<li>写500字，打印出来。</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="15-心理学设计实验">15. <strong>心理学：设计实验</strong></h3>
-<p><strong>目标</strong>：研究“音乐对专注力”的影响。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>确定研究问题</strong>
-<ul>
-<li>问题：听音乐会不会让人更专注？</li>
-<li>写下来，贴在桌前。</li>
-</ul>
-</li>
-<li><strong>设计实验方法</strong>
-<ul>
-<li>分两组：一组听音乐做题，一组安静做题。</li>
-<li>每组5人，做10道数学题。</li>
-</ul>
-</li>
-<li><strong>收集数据</strong>
-<ul>
-<li>准备10道题，计时10分钟，看每人做对几道。</li>
-<li>记在表里：音乐组、安静组。</li>
-</ul>
-</li>
-<li><strong>分析结果</strong>
-<ul>
-<li>算平均：音乐组对7道，安静组对6道。</li>
-<li>看看差别大不大。</li>
-</ul>
-</li>
-<li><strong>撰写实验报告</strong>
-<ul>
-<li>写：“音乐组专注力更高，可能因为放松。”</li>
-<li>加表和结论，500字。</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="16-法律撰写法律意见书">16. <strong>法律：撰写法律意见书</strong></h3>
-<p><strong>目标</strong>：写租房纠纷的意见书。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>了解案件背景</strong>
-<ul>
-<li>情况：房客没交3个月房租，房东要赶人。</li>
-<li>写下事实：租期1年，月租2000元。</li>
-</ul>
-</li>
-<li><strong>研究相关法律</strong>
-<ul>
-<li>查《合同法》：房客违约，房东可解除合同。</li>
-<li>记下条款号，比如“第93条”。</li>
-</ul>
-</li>
-<li><strong>分析法律问题</strong>
-<ul>
-<li>写：房客没交租算违约，房东有权赶人，但要提前通知。</li>
-<li>检查：房东通知了吗？</li>
-</ul>
-</li>
-<li><strong>提出法律意见</strong>
-<ul>
-<li>建议：房东发书面通知，30天后可起诉。</li>
-<li>写清楚理由。</li>
-</ul>
-</li>
-<li><strong>撰写意见书</strong>
-<ul>
-<li>分段：事实、法律、分析、建议。</li>
-<li>写500字，签上名字。</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="17-金融制定投资计划">17. <strong>金融：制定投资计划</strong></h3>
-<p><strong>目标</strong>：用5000元投资，赚点钱。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>确定投资目标</strong>
-<ul>
-<li>目标：一年赚500元，不想亏太多。</li>
-<li>写下：中等风险。</li>
-</ul>
-</li>
-<li><strong>研究投资选项</strong>
-<ul>
-<li>查：股票（科技公司）、基金（指数基金）。</li>
-<li>记：股票可能赚10%，基金稳点5%。</li>
-</ul>
-</li>
-<li><strong>制定投资组合</strong>
-<ul>
-<li>分钱：3000元买基金，2000元买股票。</li>
-<li>写下每只基金和股票的名字。</li>
-</ul>
-</li>
-<li><strong>监控和调整</strong>
-<ul>
-<li>每月看一次：赚了还是亏了？</li>
-<li>亏太多就卖掉股票，加买基金。</li>
-</ul>
-</li>
-<li><strong>总结投资经验</strong>
-<ul>
-<li>年底算：赚了600元。</li>
-<li>记下：下次多买基金。</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="18-时尚设计服装系列">18. <strong>时尚：设计服装系列</strong></h3>
-<p><strong>目标</strong>：设计3件夏装。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>确定设计主题</strong>
-<ul>
-<li>主题：清凉夏天。</li>
-<li>灵感：海边风，蓝色为主。</li>
-</ul>
-</li>
-<li><strong>研究趋势和材料</strong>
-<ul>
-<li>看杂志：今年流行宽松裙。</li>
-<li>选材料：棉布、薄纱。</li>
-</ul>
-</li>
-<li><strong>草图设计</strong>
-<ul>
-<li>画3件：宽松裙、吊带衫、短裤。</li>
-<li>标颜色：蓝裙、黄衫、白色裤。</li>
-</ul>
-</li>
-<li><strong>制作样品</strong>
-<ul>
-<li>买布：每种1米，10元/米。</li>
-<li>用家里的缝纫机缝裙子。</li>
-</ul>
-</li>
-<li><strong>展示和评估</strong>
-<ul>
-<li>穿上拍照片，发朋友圈问意见。</li>
-<li>朋友说裙子太长，改短10厘米。</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="19-美食开发新菜谱">19. <strong>美食：开发新菜谱</strong></h3>
-<p><strong>目标</strong>：做一道辣鸡翅。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>选择菜系和灵感</strong>
-<ul>
-<li>菜系：川菜。</li>
-<li>灵感：麻辣口味。</li>
-</ul>
-</li>
-<li><strong>研究食材和口味</strong>
-<ul>
-<li>食材：鸡翅、辣椒、花椒。</li>
-<li>调料：盐、酱油、糖。</li>
-</ul>
-</li>
-<li><strong>设计菜谱</strong>
-<ul>
-<li>步骤：1. 鸡翅洗净；2. 腌30分钟加盐和酱油；3. 炒辣椒花椒；4. 加鸡翅炒10分钟。</li>
-<li>写在纸上。</li>
-</ul>
-</li>
-<li><strong>测试和调整</strong>
-<ul>
-<li>做一次尝：太辣就少放点辣椒。</li>
-<li>摆盘：撒点葱花好看。</li>
-</ul>
-</li>
-<li><strong>记录和分享</strong>
-<ul>
-<li>写菜谱：列食材和步骤。</li>
-<li>拍照发朋友圈：“新菜辣鸡翅！”</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="20-体育制定训练计划">20. <strong>体育：制定训练计划</strong></h3>
-<p><strong>目标</strong>：提高篮球投篮命中率。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>确定训练目标</strong>
-<ul>
-<li>目标：10投中8个。</li>
-<li>现在：10投中5个。</li>
-</ul>
-</li>
-<li><strong>选择训练方法</strong>
-<ul>
-<li>方法：每天投篮练习+手臂力量。</li>
-<li>动作：投篮100次，举哑铃20次。</li>
-</ul>
-</li>
-<li><strong>制定训练日程</strong>
-<ul>
-<li>周一到周五：每天1小时，投篮+举哑铃。</li>
-<li>周末休息。</li>
-</ul>
-</li>
-<li><strong>记录训练数据</strong>
-<ul>
-<li>用手机记：今天投中60个。</li>
-<li>每周测10次，看进步没。</li>
-</ul>
-</li>
-<li><strong>评估和调整</strong>
-<ul>
-<li>1个月后：10投中7个。</li>
-<li>加练：每天多投20次。</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="21-科技趋势撰写分析文章">21. <strong>科技趋势：撰写分析文章</strong></h3>
-<p><strong>目标</strong>：写篇关于“5G”的文章。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>选择科技趋势</strong>
-<ul>
-<li>选：5G网络。</li>
-<li>写下：想知道它怎么改变生活。</li>
-</ul>
-</li>
-<li><strong>研究发展趋势</strong>
-<ul>
-<li>查新闻：5G速度快，下载电影几秒钟。</li>
-<li>找例子：医院用5G做远程手术。</li>
-</ul>
-</li>
-<li><strong>分析影响</strong>
-<ul>
-<li>写：5G让手机更快，还能帮自动驾驶车。</li>
-<li>缺点：建基站花钱多。</li>
-</ul>
-</li>
-<li><strong>提出预测</strong>
-<ul>
-<li>猜：5年后家家用5G。</li>
-<li>挑战：农村可能信号差。</li>
-</ul>
-</li>
-<li><strong>撰写文章</strong>
-<ul>
-<li>分段：开头（5G是什么）、影响、预测。</li>
-<li>写800字，发博客。</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="22-历史撰写历史事件报告">22. <strong>历史：撰写历史事件报告</strong></h3>
-<p><strong>目标</strong>：写关于“长城建造”的报告。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>选择历史事件</strong>
-<ul>
-<li>选：长城建造。</li>
-<li>写下：想知道为啥建长城。</li>
-</ul>
-</li>
-<li><strong>收集资料</strong>
-<ul>
-<li>查书或网：秦朝开始建，防北方游牧民族。</li>
-<li>记下：用了20万人，修了几百年。</li>
-</ul>
-</li>
-<li><strong>分析事件背景和影响</strong>
-<ul>
-<li>背景：写“秦始皇统一后要防敌人”。</li>
-<li>影响：写“保护了中原，还成旅游景点”。</li>
-</ul>
-</li>
-<li><strong>撰写报告</strong>
-<ul>
-<li>分段：时间、原因、影响。</li>
-<li>写500字，打印。</li>
-</ul>
-</li>
-<li><strong>反思和讨论</strong>
-<ul>
-<li>写：长城说明古代人很聪明，今天还吸引游客。</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="23-哲学撰写哲学论文">23. <strong>哲学：撰写哲学论文</strong></h3>
-<p><strong>目标</strong>：写关于“幸福是什么”的论文。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>选择哲学问题</strong>
-<ul>
-<li>问题：幸福是什么？</li>
-<li>写下：想探讨钱和幸福的关系。</li>
-</ul>
-</li>
-<li><strong>研究相关理论</strong>
-<ul>
-<li>查：亚里士多德说幸福是美好生活，现代人说钱重要。</li>
-<li>记下观点对比。</li>
-</ul>
-</li>
-<li><strong>分析和辩论</strong>
-<ul>
-<li>写：钱能买东西但不一定开心，举例“有钱人也不满足”。</li>
-<li>自己观点：幸福是内心平静。</li>
-</ul>
-</li>
-<li><strong>撰写论文</strong>
-<ul>
-<li>分段：引言、理论、我的看法。</li>
-<li>写1000字。</li>
-</ul>
-</li>
-<li><strong>反思和讨论</strong>
-<ul>
-<li>写：现代社会太追钱，可能该多关注内心。</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="24-宗教撰写宗教研究报告">24. <strong>宗教：撰写宗教研究报告</strong></h3>
-<p><strong>目标</strong>：写关于“基督教十诫”的报告。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>选择宗教主题</strong>
-<ul>
-<li>选：十诫。</li>
-<li>写下：想知道它怎么影响生活。</li>
-</ul>
-</li>
-<li><strong>收集宗教文献</strong>
-<ul>
-<li>查《圣经》：十诫在《出埃及记》，比如“不可偷盗”。</li>
-<li>记下每条的意思。</li>
-</ul>
-</li>
-<li><strong>分析宗教教义</strong>
-<ul>
-<li>写：“不可偷盗”教人诚实，社会更和谐。</li>
-<li>举例：偷东西会坐牢。</li>
-</ul>
-</li>
-<li><strong>撰写报告</strong>
-<ul>
-<li>分段：十诫内容、意义。</li>
-<li>写500字。</li>
-</ul>
-</li>
-<li><strong>反思和讨论</strong>
-<ul>
-<li>写：十诫今天还指导道德，比如不说谎。</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="25-语言学习制定学习计划">25. <strong>语言学习：制定学习计划</strong></h3>
-<p><strong>目标</strong>：学英语，能点餐。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>确定学习目标</strong>
-<ul>
-<li>目标：会说“点菜”英语。</li>
-<li>写下：1个月学会。</li>
-</ul>
-</li>
-<li><strong>选择学习资源</strong>
-<ul>
-<li>用：手机App“每日英语”，书《英语口语900句》。</li>
-<li>下好App，买本书。</li>
-</ul>
-</li>
-<li><strong>制定学习日程</strong>
-<ul>
-<li>每天30分钟：10分钟听App，20分钟读句子。</li>
-<li>周一到周五学，周末练。</li>
-</ul>
-</li>
-<li><strong>练习和应用</strong>
-<ul>
-<li>学句子：“I want a pizza.”</li>
-<li>对着镜子说10遍，再找朋友练。</li>
-</ul>
-</li>
-<li><strong>评估和调整</strong>
-<ul>
-<li>1个月后去餐厅试：点餐顺不顺？</li>
-<li>不顺就多学10句。</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="26-音乐创作一首歌曲">26. <strong>音乐：创作一首歌曲</strong></h3>
-<p><strong>目标</strong>：写首关于“雨天”的歌。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>确定歌曲主题</strong>
-<ul>
-<li>主题：雨天心情。</li>
-<li>写下：想表达安静的感觉。</li>
-</ul>
-</li>
-<li><strong>编写歌词</strong>
-<ul>
-<li>写4句：“雨滴敲窗，风在低唱，我坐窗前，心很安详。”</li>
-<li>读读看顺不顺。</li>
-</ul>
-</li>
-<li><strong>创作旋律</strong>
-<ul>
-<li>用手机哼调子，录下来。</li>
-<li>简单点：C-G-F-G循环。</li>
-</ul>
-</li>
-<li><strong>编曲和录制</strong>
-<ul>
-<li>用键盘弹旋律，录进手机。</li>
-<li>加点鼓点节奏。</li>
-</ul>
-</li>
-<li><strong>分享和反馈</strong>
-<ul>
-<li>唱给家人听，问好不好。</li>
-<li>改改：家人说太慢就快点。</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="27-电影撰写影评">27. <strong>电影：撰写影评</strong></h3>
-<p><strong>目标</strong>：写《阿凡达》的影评。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>观看电影</strong>
-<ul>
-<li>看一遍《阿凡达》，记下：蓝人、森林、打仗。</li>
-<li>再看时注意画面和音乐。</li>
-</ul>
-</li>
-<li><strong>分析电影元素</strong>
-<ul>
-<li>写：导演卡梅隆爱用特效，画面像画。</li>
-<li>角色：男主从自私变勇敢。</li>
-</ul>
-</li>
-<li><strong>评价电影</strong>
-<ul>
-<li>写：喜欢森林美景，但剧情有点老套。</li>
-<li>打分：8/10。</li>
-</ul>
-</li>
-<li><strong>撰写影评</strong>
-<ul>
-<li>分段：故事、画面、我的看法。</li>
-<li>写500字。</li>
-</ul>
-</li>
-<li><strong>分享和讨论</strong>
-<ul>
-<li>发朋友圈：“《阿凡达》值得看！”</li>
-<li>问朋友意见。</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="28-游戏设计游戏关卡">28. <strong>游戏：设计游戏关卡</strong></h3>
-<p><strong>目标</strong>：设计一个跳跃游戏关卡。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>确定游戏类型</strong>
-<ul>
-<li>类型：跳跃游戏。</li>
-<li>目标：跳过障碍到终点。</li>
-</ul>
-</li>
-<li><strong>设计关卡目标</strong>
-<ul>
-<li>写：玩家要跳5个平台，躲3个陷阱。</li>
-<li>终点有宝箱。</li>
-</ul>
-</li>
-<li><strong>创建关卡布局</strong>
-<ul>
-<li>画草图：5个平台高低不同，3个坑在中间。</li>
-<li>标距离：平台间2厘米。</li>
-</ul>
-</li>
-<li><strong>测试和调整</strong>
-<ul>
-<li>用纸玩：拿笔当人跳，看难不难。</li>
-<li>太难就少个坑。</li>
-</ul>
-</li>
-<li><strong>发布和反馈</strong>
-<ul>
-<li>给朋友玩，问哪里不好。</li>
-<li>改：朋友说太高就矮点。</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="29-园艺种植花卉">29. <strong>园艺：种植花卉</strong></h3>
-<p><strong>目标</strong>：种一盆向日葵。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>选择花卉种类</strong>
-<ul>
-<li>选：向日葵，喜欢太阳。</li>
-<li>查：春天种最好。</li>
-</ul>
-</li>
-<li><strong>准备土壤和工具</strong>
-<ul>
-<li>买：花盆、土、铲子，超市20元。</li>
-<li>土里加点肥料。</li>
-</ul>
-</li>
-<li><strong>种植和浇水</strong>
-<ul>
-<li>挖坑2厘米，放3粒种子，盖土。</li>
-<li>每天早浇水，土湿就行。</li>
-</ul>
-</li>
-<li><strong>护理和施肥</strong>
-<ul>
-<li>每周看：虫子咬就喷药。</li>
-<li>每月加一次肥。</li>
-</ul>
-</li>
-<li><strong>观察和记录</strong>
-<ul>
-<li>记笔记：5天发芽，30天开花。</li>
-<li>拍照片留念。</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="30-宠物护理照顾新宠物">30. <strong>宠物护理：照顾新宠物</strong></h3>
-<p><strong>目标</strong>：养一只小猫。<br>
-<strong>详细步骤</strong>：</p>
-<ol>
-<li><strong>了解宠物需求</strong>
-<ul>
-<li>查：猫要吃猫粮，每天玩30分钟。</li>
-<li>记下：需要猫砂盆。</li>
-</ul>
-</li>
-<li><strong>准备宠物用品</strong>
-<ul>
-<li>买：猫粮1袋、猫砂盆、玩具球，100元。</li>
-<li>放家里一角。</li>
-</ul>
-</li>
-<li><strong>建立日常护理routine</strong>
-<ul>
-<li>早8点喂猫粮，晚6点玩球。</li>
-<li>每天铲一次猫砂。</li>
-</ul>
-</li>
-<li><strong>训练和社交</strong>
-<ul>
-<li>教：“坐下”给零食奖励。</li>
-<li>周末带去朋友家见人。</li>
-</ul>
-</li>
-<li><strong>定期检查健康</strong>
-<ul>
-<li>每月看猫毛和眼睛，异常就去医院。</li>
-<li>半年打一次疫苗。</li>
-</ul>
-</li>
-</ol></div>
+                <div id="text-content"><h4 id="操作模板直接复制"><strong>操作模板（直接复制）</strong></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">请按以下步骤回答：</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1.</span> <span style="color:#960050;background-color:#1e0010">先确认以下信息的可靠性：</span>  
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">-</span> <span style="color:#960050;background-color:#1e0010">是否为行业共识？</span>  
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">-</span> <span style="color:#960050;background-color:#1e0010">是否有权威来源支撑？</span>  
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">-</span> <span style="color:#960050;background-color:#1e0010">是否存在争议观点？</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">2.</span> <span style="color:#960050;background-color:#1e0010">如果信息存疑，请明确标注「需进一步验证」</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">3. …</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></code></pre></div></div>
+                <div id="full-content" style="display: none;"><h4 id="操作模板直接复制"><strong>操作模板（直接复制）</strong></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">请按以下步骤回答：</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1.</span> <span style="color:#960050;background-color:#1e0010">先确认以下信息的可靠性：</span>  
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">-</span> <span style="color:#960050;background-color:#1e0010">是否为行业共识？</span>  
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">-</span> <span style="color:#960050;background-color:#1e0010">是否有权威来源支撑？</span>  
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">-</span> <span style="color:#960050;background-color:#1e0010">是否存在争议观点？</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">2.</span> <span style="color:#960050;background-color:#1e0010">如果信息存疑，请明确标注「需进一步验证」</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">3.</span> <span style="color:#960050;background-color:#1e0010">最后给出正式回答</span>  
+</span></span></code></pre></div><p>问题：[你的问题]</p>
+<h4 id="案例对比"><strong>案例对比</strong></h4>
+<ul>
+<li><strong>错误问法</strong>
+“北京购房的最新限购政策是什么？”</li>
+<li><strong>正确问法</strong>
+“请先确认2023年最新政策，再回答：北京购房的限购政策是什么？若有地方性特殊规定请重点说明”</li>
+</ul>
+<h3 id="方法二分级回答模式3秒判断可信度">方法二：分级回答模式——3秒判断可信度</h3>
+<h4 id="使用场景-1"><strong>使用场景</strong></h4>
+<ul>
+<li>预测类问题（股票/赛事）、主观建议（产品推荐）</li>
+</ul>
+<pre tabindex="0"><code>请分三级回答：  
+✅ 高置信度：有明确证据支持  
+⚠️ 中置信度：存在部分佐证但需验证  
+❌ 低置信度：仅为推测或经验判断  
+
+问题：[你的问题]  
+</code></pre><h4 id="经典案例"><strong>经典案例</strong></h4>
+<ul>
+<li><strong>提问</strong>
+“量子计算机十年内能取代传统计算机吗？”</li>
+<li><strong>AI回复</strong></li>
+</ul>
+<pre tabindex="0"><code>⚠️ 中置信度：  
+当前量子计算机仍处实验室阶段，但IBM等公司预测2030年可能突破...  
+❌ 低置信度：  
+关于「取代传统计算机」的说法暂无可靠证据  
+</code></pre><h3 id="方法三时间锁指令屏蔽过期信息">方法三：时间锁指令——屏蔽过期信息</h3>
+<h4 id="使用场景-2"><strong>使用场景</strong></h4>
+<ul>
+<li>政策法规、科技进展、软件教程等时效敏感内容</li>
+</ul>
+<h4 id="防过时模板"><strong>防过时模板</strong></h4>
+<pre tabindex="0"><code>请确保：  
+1. 仅使用2025年1月之后发布的资料  
+2. 若必须引用旧内容，需标注「该信息可能已过时」  
+3. 优先选择来源中的最新3条结果  
+
+问题：[你的问题]  
+</code></pre><h4 id="避坑案例"><strong>避坑案例</strong></h4>
+<ul>
+<li><strong>错误问法</strong>
+“Python异步编程的最佳实践是什么？”</li>
+<li><strong>正确问法</strong>
+“请根据2024年后更新的资料，提供Python异步编程最新最佳实践”</li>
+</ul>
+<h4 id="注意事项"><strong>注意事项</strong></h4>
+<ul>
+<li>警惕无时间标注的内容（可追加提问：“这条信息的发布日期是？”）</li>
+<li>日期格式统一为<code>YYYY-MM-DD</code>避免歧义</li>
+</ul>
+<h3 id="方法四自检指令让ai自己当裁判">方法四：自检指令——让AI自己当裁判</h3>
+<h4 id="使用场景-3"><strong>使用场景</strong></h4>
+<ul>
+<li>代码编写、数学计算、方案设计等可验证场景</li>
+</ul>
+<h4 id="自检模板"><strong>自检模板</strong></h4>
+<pre tabindex="0"><code>请按以下要求回答：  
+1. 给出解决方案  
+2. 附带3个验证方法  
+3. 说明如何检测答案的正确性  
+
+问题：[你的问题]  
+</code></pre><h4 id="实操案例"><strong>实操案例</strong></h4>
+<ul>
+<li><strong>提问</strong>
+“如何用Excel计算两个日期间的工作日天数？”</li>
+<li><strong>AI回复</strong></li>
+</ul>
+<pre tabindex="0"><code>解决方案：使用NETWORKDAYS函数  
+验证方法：  
+1. 对比手动计算2023-10月的天数  
+2. 检查是否自动排除国庆假期  
+3. 输入结束日期早于开始日期时应报错  
+</code></pre><h4 id="安全提示"><strong>安全提示</strong></h4>
+<ul>
+<li>禁止直接执行AI生成的代码（即使它说有测试用例）</li>
+<li>复杂计算建议用计算器二次验证</li>
+</ul>
+<h3 id="终极组合拳重要问题这样问"><strong>终极组合拳：重要问题这样问</strong></h3>
+<pre tabindex="0"><code>请按以下步骤回答：  
+1. 仅使用2024年后的资料  
+2. 分三级标注置信度（✅/⚠️/❌）  
+3. 提供3个验证方法  
+
+问题：[你的问题]  
+</code></pre><h3 id="结语从被动接受到主动掌控"><strong>结语：从被动接受，到主动掌控</strong></h3>
+<p>“智能工具用不好，反而会被工具误导。”
+这4个方法的核心不是技术，而是<strong>批判性思维的外挂</strong>。
+记住：真正聪明的提问者，永远会给AI装上「安全带」。</p></div>
                 
         <summary id="read-more-btn" onclick="toggleReadMore()" style="display: inline;">more</summary>
                 
@@ -1638,7 +664,7 @@ header h1 a:hover {
         <a href="/page/3/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
       </li>
       <li class="page-item">
-        <a href="/page/6/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="/page/7/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
     <script>
