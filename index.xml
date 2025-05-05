@@ -6,8 +6,15 @@
     <description>Recent content on Via Blog👀</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Mar 2025 20:43:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 05 May 2025 16:00:48 +0800</lastBuildDate>
     <atom:link href="https://he-via.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>知识图谱 &#43; 大语言模型：打造更聪明、更可靠的AI大脑 —— 探索 GraphRAG 中文优化与可视化实践</title>
+      <link>https://he-via.xyz/posts/92-%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1/</link>
+      <pubDate>Mon, 05 May 2025 16:00:48 +0800</pubDate>
+      <guid>https://he-via.xyz/posts/92-%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1/</guid>
+      <description>&lt;p&gt;大语言模型（LLMs）无疑是近年来人工智能领域最耀眼的明星。它们强大的自然语言理解和生成能力，在文本创作、代码生成、对话交互等众多领域展现了惊人的潜力。然而，当前的 LLMs 并非完美无缺，它们常常面临着“幻觉”（生成不实信息）、知识更新滞后、复杂推理能力不足等挑战。&lt;/p&gt;&#xA;&lt;p&gt;如何克服这些局限，让 LLMs 变得更“聪明”、更“可靠”？&lt;strong&gt;知识图谱（Knowledge Graphs, KGs）&lt;/strong&gt; 提供了一条极具前景的路径。&lt;/p&gt;&#xA;&lt;h2 id=&#34;为什么需要知识图谱增强大语言模型&#34;&gt;为什么需要知识图谱增强大语言模型？&lt;/h2&gt;&#xA;&lt;p&gt;知识图谱以结构化的方式存储实体及其之间的关系，构成了一个庞大的语义网络。它具有以下优势，恰好能弥补 LLMs 的短板：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;提升知识准确性与事实性：&lt;/strong&gt; KGs 存储的是经过验证的、结构化的事实知识。将 KG 作为外部知识源引入 LLMs，可以有效减少模型“一本正经地胡说八道”的现象，让生成的内容更加真实可信。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;增强推理能力：&lt;/strong&gt; LLMs 本质上是基于概率模式进行预测，对于需要多步逻辑推演的复杂问题常常力不从心。而 KGs 中显式的关系链接为逻辑推理提供了坚实的基础，模型可以沿着图谱路径进行更深层次、更可靠的推理。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;提供可解释性：&lt;/strong&gt; LLMs 的决策过程往往像一个“黑箱”。而基于 KG 的回答或推理，可以追溯其依赖的图谱路径和事实依据，提高了模型输出的可解释性和透明度。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;实现知识动态更新：&lt;/strong&gt; 相较于重新训练动辄耗费巨大资源的 LLMs，更新知识图谱相对容易。通过维护和更新 KG，可以间接为 LLM 注入最新的知识。&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
     <item>
       <title>最近都在讲的个人知识库，其背后的技术原理是什么？</title>
       <link>https://he-via.xyz/posts/93-%E4%B8%AA%E4%BA%BA%E7%9F%A5%E8%AF%86%E5%BA%93/</link>

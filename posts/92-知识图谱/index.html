@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="generator" content="Hugo 0.145.0">
-    <title>Via Blog👀</title>
+    <title>知识图谱 &#43; 大语言模型：打造更聪明、更可靠的AI大脑 —— 探索 GraphRAG 中文优化与可视化实践 | Via Blog👀</title>
     <link rel="canonical" href="https://he-via.xyz/">
     
     
     <link rel="icon" href="/favicon.ico">
     
     
-    <meta name="description" content="">
+    <meta name="description" content="大语言模型（LLMs）无疑是近年来人工智能领域最耀眼的明星。它们强大的自然语言理解和生成能力，在文本创作、代码生成、对话交互等众多领域展现了惊人的潜力。然而，当前的 LLMs 并非完美无缺，它们常常面临着“幻觉”（生成不实信息）、知识更新滞后、复杂推理能力不足等挑战。
+如何克服这些局限，让 LLMs 变得更“聪明”、更“可靠”？知识图谱（Knowledge Graphs, KGs） 提供了一条极具前景的路径。
+为什么需要知识图谱增强大语言模型？
+知识图谱以结构化的方式存储实体及其之间的关系，构成了一个庞大的语义网络。它具有以下优势，恰好能弥补 LLMs 的短板：
+
+提升知识准确性与事实性： KGs 存储的是经过验证的、结构化的事实知识。将 KG 作为外部知识源引入 LLMs，可以有效减少模型“一本正经地胡说八道”的现象，让生成的内容更加真实可信。
+增强推理能力： LLMs 本质上是基于概率模式进行预测，对于需要多步逻辑推演的复杂问题常常力不从心。而 KGs 中显式的关系链接为逻辑推理提供了坚实的基础，模型可以沿着图谱路径进行更深层次、更可靠的推理。
+提供可解释性： LLMs 的决策过程往往像一个“黑箱”。而基于 KG 的回答或推理，可以追溯其依赖的图谱路径和事实依据，提高了模型输出的可解释性和透明度。
+实现知识动态更新： 相较于重新训练动辄耗费巨大资源的 LLMs，更新知识图谱相对容易。通过维护和更新 KG，可以间接为 LLM 注入最新的知识。
+">
     
+    
+    <meta name="keywords" content="知识图谱, 个人知识库, 大语言模型">
     
     
     <style>
@@ -410,7 +420,7 @@ header h1 a:hover {
 
 
 <head>
-  <title>Via Blog👀</title>
+  <title>知识图谱 &#43; 大语言模型：打造更聪明、更可靠的AI大脑 —— 探索 GraphRAG 中文优化与可视化实践</title>
   <meta name="baidu-site-verification" content="codeva-1hw2vueSnj" />
 </head>
 </head>
@@ -418,99 +428,21 @@ header h1 a:hover {
         <header><h1 id="Via Blog👀"><a href="https://he-via.xyz/">Via Blog👀</a></h1></header>
 <main>
     
-    <div id="content">
-    <aside id="sidebar">
-        <div id="avatar">
-            
-            <img class="flower" src="/heads.png">
-            
-        </div>
-        
-        <div id="bio">
-        
-            <p>欢迎来到我的博客，</p>
-<p>这里是思想停泊的港湾，</p>
-<p>也是灵感起航的地方。</p>
-<p>愿每一次文字的交汇，</p>
-<p>都能点亮你内心的一束光。✨📖</p>
-
-        
-        </div>
-        
-        <div class="small-box">
-            
-                <ul>
-<li>作者：via</li>
-<li>年龄：26岁</li>
-<li>星座：处女座</li>
-<li>性别：男</li>
-<li>职业：python 开发</li>
-</ul>
-
-            
-            </ul>
-        </div>
-        
-        <nav>
-            <ul>
-            
-            
-                <li><a href="https://blog.csdn.net/weixin_43264001?type=blog">CSDN</a></li>
-            
-                <li><a href="https://github.com/via007">GitHub</a></li>
-            
-            
-            </ul>
-        </nav>
-    </aside>
-    <main>
-        <article id="top" class="clearfix">
-            
-            <section>
-            <div class="img-right">
-                <img src="/cat.png">
-            </div>
-            <div>
-            <h1>欢迎来到我的博客~!</h1>
-            
-                <p>越努力，越幸运🍀</p>
-            
-                <p>太阳☀️，它每时每刻都是夕阳🌇也都是旭日</p>
-            
-            </div>
-            </section>
-            <section>
-            <h4>博客关键词:</h4>
-                <ul>
-                
-                    <li>python 编程</li>
-                
-                    <li>AI大模型 使用技巧</li>
-                
-                    <li>日常分享 好书推荐</li>
-                
-                </ul>
-            </section>
-            
-        </article>
-    
-    
-    
-        <article>
-            <h2><a href="/posts/92-%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1/">知识图谱 &#43; 大语言模型：打造更聪明、更可靠的AI大脑 —— 探索 GraphRAG 中文优化与可视化实践</a></h2>
-            
-            tags:
-            
-            <a href="/tags/%e7%9f%a5%e8%af%86%e5%9b%be%e8%b0%b1">知识图谱</a>,
-            
-            <a href="/tags/%e4%b8%aa%e4%ba%ba%e7%9f%a5%e8%af%86%e5%ba%93">个人知识库</a>,
-            
-            <a href="/tags/%e5%a4%a7%e8%af%ad%e8%a8%80%e6%a8%a1%e5%9e%8b">大语言模型</a>
-            
-            <div class="post-header">
-                @via <span class="timestamp">05/05/2025</span>
-            </div>
-            <p><p>大语言模型（LLMs）无疑是近年来人工智能领域最耀眼的明星。它们强大的自然语言理解和生成能力，在文本创作、代码生成、对话交互等众多领域展现了惊人的潜力。然而，当前的 LLMs 并非完美无缺，它们常常面临着“幻觉”（生成不实信息）、知识更新滞后、复杂推理能力不足等挑战。</p>
+<article>
+	<h2>知识图谱 &#43; 大语言模型：打造更聪明、更可靠的AI大脑 —— 探索 GraphRAG 中文优化与可视化实践</h2>
+	
+	tags:
+	
+	<a href="/tags/%e7%9f%a5%e8%af%86%e5%9b%be%e8%b0%b1">知识图谱</a>,
+	
+	<a href="/tags/%e4%b8%aa%e4%ba%ba%e7%9f%a5%e8%af%86%e5%ba%93">个人知识库</a>,
+	
+	<a href="/tags/%e5%a4%a7%e8%af%ad%e8%a8%80%e6%a8%a1%e5%9e%8b">大语言模型</a>
+	
+	<div class="post-header">
+	@via <span class="timestamp">05/05/2025</span>
+	</div>
+	<p><p>大语言模型（LLMs）无疑是近年来人工智能领域最耀眼的明星。它们强大的自然语言理解和生成能力，在文本创作、代码生成、对话交互等众多领域展现了惊人的潜力。然而，当前的 LLMs 并非完美无缺，它们常常面临着“幻觉”（生成不实信息）、知识更新滞后、复杂推理能力不足等挑战。</p>
 <p>如何克服这些局限，让 LLMs 变得更“聪明”、更“可靠”？<strong>知识图谱（Knowledge Graphs, KGs）</strong> 提供了一条极具前景的路径。</p>
 <h2 id="为什么需要知识图谱增强大语言模型">为什么需要知识图谱增强大语言模型？</h2>
 <p>知识图谱以结构化的方式存储实体及其之间的关系，构成了一个庞大的语义网络。它具有以下优势，恰好能弥补 LLMs 的短板：</p>
@@ -520,19 +452,14 @@ header h1 a:hover {
 <li><strong>提供可解释性：</strong> LLMs 的决策过程往往像一个“黑箱”。而基于 KG 的回答或推理，可以追溯其依赖的图谱路径和事实依据，提高了模型输出的可解释性和透明度。</li>
 <li><strong>实现知识动态更新：</strong> 相较于重新训练动辄耗费巨大资源的 LLMs，更新知识图谱相对容易。通过维护和更新 KG，可以间接为 LLM 注入最新的知识。</li>
 </ol></p>
-            
-            <div class="photosetx2">
-                
-                <a href="/%e7%9f%a5%e8%af%86%e5%9b%be%e8%b0%b1.png" target="_blank"><img src="/%e7%9f%a5%e8%af%86%e5%9b%be%e8%b0%b1.png"></a>
-                
-            </div>
-            
-            <div class="post-content readmore">
-                <div id="text-content"><h2 id="如何融合知识图谱与大语言模型">如何融合知识图谱与大语言模型？</h2>
-<p>目前，将 KG 融入 LLMs 的方法主要有几类：</p>
-<ol>
-<li><strong>知识图谱增强的检索增强生成 (KG-RAG)：</strong> 这是目前最主流和实用的方法之一。其核心思想是在 LLM 生成回答前，先从 KG 中检索与问题相关的知识（实 …</li></ol></div>
-                <div id="full-content" style="display: none;"><h2 id="如何融合知识图谱与大语言模型">如何融合知识图谱与大语言模型？</h2>
+	
+	<div>
+	
+	<a href="/%e7%9f%a5%e8%af%86%e5%9b%be%e8%b0%b1.png" target="_blank"><img style="max-height: 15rem; margin-right: .3rem;" src="/%e7%9f%a5%e8%af%86%e5%9b%be%e8%b0%b1.png"></a>
+	
+	</div>
+	
+	<div id="full-content"><h2 id="如何融合知识图谱与大语言模型">如何融合知识图谱与大语言模型？</h2>
 <p>目前，将 KG 融入 LLMs 的方法主要有几类：</p>
 <ol>
 <li><strong>知识图谱增强的检索增强生成 (KG-RAG)：</strong> 这是目前最主流和实用的方法之一。其核心思想是在 LLM 生成回答前，先从 KG 中检索与问题相关的知识（实体、关系、子图），并将这些知识作为上下文（Context）注入 Prompt，引导 LLM 生成更准确、更具知识性的回答。</li>
@@ -572,61 +499,8 @@ header h1 a:hover {
 <p><strong>我诚挚邀请您关注这个项目</strong>，共同探索知识图谱增强大语言模型的无限可能。欢迎试用、反馈、贡献，让我们一起构建更智能的 AI 未来！</p>
 <p><strong>再次附上项目地址：</strong>
 <a href="https://github.com/via007/graphrag-Chinese-llm">https://github.com/via007/graphrag-Chinese-llm</a></p></div>
-                
-        <summary id="read-more-btn" onclick="toggleReadMore()" style="display: inline;">more</summary>
-                
-            </div>
-            
-        </article>
-    
-    
-    <ul class="pagination pagination-default">
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item active">
-        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
-      </li>
-      <li class="page-item">
-        <a href="/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
-      </li>
-      <li class="page-item">
-        <a href="/page/3/" aria-label="Page 3" class="page-link" role="button">3</a>
-      </li>
-      <li class="page-item">
-        <a href="/page/4/" aria-label="Page 4" class="page-link" role="button">4</a>
-      </li>
-      <li class="page-item">
-        <a href="/page/5/" aria-label="Page 5" class="page-link" role="button">5</a>
-      </li>
-      <li class="page-item">
-        <a href="/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/page/8/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
-    <script>
-    function toggleReadMore() {
-        var fullContent = document.getElementById("full-content");
-        var btnText = document.getElementById("read-more-btn");
-        var textContent = document.getElementById("text-content");
-
-        if (fullContent.style.display === "none") {
-            textContent.style.display = "none";
-            fullContent.style.display = "inline";
-            btnText.innerHTML = "less";
-        } else {
-            textContent.style.display = "inline";
-            fullContent.style.display = "none";
-            btnText.innerHTML = "more";
-        }
-    }
-    </script>
-    </main>
+	
+</article>
 
     
 </main>
