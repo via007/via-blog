@@ -6,8 +6,15 @@
     <description>Recent content in Python on Via Blog👀</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Feb 2025 21:05:11 -0300</lastBuildDate>
+    <lastBuildDate>Sun, 18 May 2025 10:25:10 +0800</lastBuildDate>
     <atom:link href="https://he-via.xyz/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>常见的 Python 环境配置问题及解决方案!!</title>
+      <link>https://he-via.xyz/posts/91-python%E7%8E%AF%E5%A2%83/</link>
+      <pubDate>Sun, 18 May 2025 10:25:10 +0800</pubDate>
+      <guid>https://he-via.xyz/posts/91-python%E7%8E%AF%E5%A2%83/</guid>
+      <description>&lt;h2 id=&#34;1-python-环境配置的常见问题&#34;&gt;1. Python 环境配置的常见问题&lt;/h2&gt;&#xA;&lt;p&gt;初学者在配置 Python 环境时，可能会遇到以下几类问题：&lt;/p&gt;&#xA;&lt;h3 id=&#34;11-不同版本的兼容性&#34;&gt;1.1 不同版本的兼容性&lt;/h3&gt;&#xA;&lt;p&gt;Python 目前有两个主要版本系列：Python 2.x 和 Python 3.x。Python 2.x 已于 2020 年 1 月 1 日停止维护，因此强烈建议使用 Python 3.x（例如 3.8 或更高版本）。然而，初学者可能因以下原因遇到兼容性问题：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;某些旧项目依赖 Python 2.x，而新项目需要 Python 3.x。&lt;/li&gt;&#xA;&lt;li&gt;第三方库可能仅支持特定 Python 版本。例如，PyTorch 2.1.0 要求 Python 3.8 或以上（&lt;a href=&#34;https://pypi.org/project/torch/&#34;&gt;PyTorch on PyPI&lt;/a&gt;)。&lt;/li&gt;&#xA;&lt;li&gt;在同一系统上安装多个 Python 版本可能导致命令行调用错误。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;解决方案&lt;/strong&gt;：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;选择 Python 3.x&lt;/strong&gt;：始终使用最新或受支持的 Python 版本（参考 &lt;a href=&#34;https://devguide.python.org/versions/#versions&#34;&gt;Python 版本支持&lt;/a&gt;)。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;检查库兼容性&lt;/strong&gt;：在安装库之前，查看其文档或 PyPI 页面，确认支持的 Python 版本。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;使用虚拟环境&lt;/strong&gt;：为每个项目创建独立的 Python 环境，避免版本冲突（详见第 2 节）。&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Python 常用字符串处理方法</title>
       <link>https://he-via.xyz/posts/98-python%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E6%96%B9%E6%B3%95/</link>
